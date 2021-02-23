@@ -1,11 +1,15 @@
 {
   "name": "project-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "project 3",
   "main": "server.js",
+  "proxy": "http://localhost:3001",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,11 @@
   "homepage": "https://github.com/stopdaydreaming/project-3#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "mongoose": "^5.11.17"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
   }
 }
