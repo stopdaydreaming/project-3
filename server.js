@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("client/build"));
 
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost/project-3", {
+  .connect(process.env.MONGODB_URI || "mongodb://localhost/animeets", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
@@ -31,7 +31,7 @@ app.get("/api/config", (req, res) => {
   });
 });
 
-app.use(routes);
+// app.use(routes);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
