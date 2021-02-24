@@ -1,9 +1,13 @@
 import './App.css';
+import './assets/output.css'
+import SignIn from './components/SignIn/SignIn';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Animeets</h1>
+      <Navbar />
+      <SignIn />
     </div>
   );
 }
