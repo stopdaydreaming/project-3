@@ -25,11 +25,11 @@ mongoose
     console.log("Error connecting to MongoDB", err);
   });
 
-app.get("/api/config", (req, res) => {
-  res.json({
-    success: true,
-  });
-});
+// app.get("/api/config", (req, res) => {
+//   res.json({
+//     success: true,
+//   });
+// });
 
 // app.use(routes);
 
