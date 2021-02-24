@@ -17,25 +17,25 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
-    useCreateIndex: true,
+    useCreateIndex: true
   })
   .then(() => {
     console.log("Successfully connected to MongoDB");
   })
-  .catch((err) => {
+  .catch(err => {
     console.log("Error connecting to MongoDB", err);
   });
 
 app.get("/api/config", (req, res) => {
   res.json({
-    success: true,
+    success: true
   });
 });
 
 // app.use(routes);
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build/index.html"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 app.listen(PORT, () => {
