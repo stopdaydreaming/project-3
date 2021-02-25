@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class NewUsr extends Component {
     render() {
+      return (
 <form class="space-y-8 divide-y divide-gray-200">
   <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
     <div>
@@ -22,9 +23,8 @@ class NewUsr extends Component {
           <div class="mt-1 sm:mt-0 sm:col-span-2">
             <div class="max-w-lg flex rounded-md shadow-sm">
               <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
-                workcation.com/
               </span>
-              <input type="text" name="username" id="username" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
+              <input type="text" name="username" id="username" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"/>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ class NewUsr extends Component {
             Country / Region
           </label>
           <div class="mt-1 sm:mt-0 sm:col-span-2">
-            <select id="country" name="country" autocomplete="country" class="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"/>
+            <select id="country" name="country" autocomplete="country" class="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md">
               <option>United States</option>
               <option>Canada</option>
               <option>Mexico</option>
