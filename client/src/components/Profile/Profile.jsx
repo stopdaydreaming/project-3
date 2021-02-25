@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Profile extends Component {
     render() {
         return (
-
+<>
 <div class="min-h-screen bg-gray-100">
   <header class="bg-white shadow"/>
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
@@ -67,7 +67,7 @@ class Profile extends Component {
             <div>
               <button type="button" class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" id="user-menu" aria-haspopup="true">
                 <span class="sr-only">Open user menu</span>
-                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80" alt="">
+                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80" alt=""/>
               </button>
             </div>
         
@@ -182,8 +182,7 @@ class Profile extends Component {
         </div>
       </div>
     </div>
-  </header>
-
+  </div>
   <main class="py-10">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 md:flex md:items-center md:justify-between md:space-x-5 lg:max-w-7xl lg:px-8">
       <div class="flex items-center space-x-5">
@@ -320,7 +319,7 @@ class Profile extends Component {
                   <li>
                     <div class="flex space-x-3">
                       <div class="flex-shrink-0">
-                        <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=uPE37qrihf&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=uPE37qrihf&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                       </div>
                       <div>
                         <div class="text-sm">
@@ -341,7 +340,7 @@ class Profile extends Component {
                   <li>
                     <div class="flex space-x-3">
                       <div class="flex-shrink-0">
-                        <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixqx=uPE37qrihf&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixqx=uPE37qrihf&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                       </div>
                       <div>
                         <div class="text-sm">
@@ -362,7 +361,7 @@ class Profile extends Component {
                   <li>
                     <div class="flex space-x-3">
                       <div class="flex-shrink-0">
-                        <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixqx=uPE37qrihf&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixqx=uPE37qrihf&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                       </div>
                       <div>
                         <div class="text-sm">
@@ -385,7 +384,7 @@ class Profile extends Component {
             <div class="bg-gray-50 px-4 py-6 sm:px-6">
               <div class="flex space-x-3">
                 <div class="flex-shrink-0">
-                  <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80" alt="">
+                  <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80" alt=""/>
                 </div>
                 <div class="min-w-0 flex-1">
                   <form action="#">
@@ -544,8 +543,7 @@ class Profile extends Component {
       </section>
     </div>
   </main>
-</div>
-
+</>
         );
     }
 }
