@@ -18,11 +18,17 @@ function App() {
       <Navbar />
       <SignIn />
       <Team />
+      <br/>
       <Avatar />
+      <br/>
       <Button />
+      <br/>
       <Card />
+      <br/>
       <NewUsr />
+      <br/>
       <Profile />
+      <br/>
       <Radio />
   
     
