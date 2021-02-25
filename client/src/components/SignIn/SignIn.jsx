@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Land from "./../../assets/Img/naruto.jpg";
+import Logob from "./../../assets/Img/ap.png";
 class SignIn extends Component {
     render() {
         return (
@@ -8,10 +9,16 @@ class SignIn extends Component {
   <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
     <div class="mx-auto w-full max-w-sm lg:w-96">
       <div>
-        {/* <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow"/> */}
+        <img class="h-100 w-100 align-center" src={Logob} alt="Workflow"/>
         <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
           Sign in to your account
-        </h2>        
+        </h2>   
+        <p class="mt-2 text-sm text-gray-600 max-w">
+          New to Animeet?
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+          Create an account
+          </a>
+        </p>     
       </div>
 
       <div class="mt-8">
@@ -27,9 +34,9 @@ class SignIn extends Component {
             </div>
 
             <div class="space-y-1">
-              <label for="password" class="block text-sm font-medium text-gray-700">
+              {/* <label for="password" class="block text-sm font-medium text-gray-700">
                 New to Animeet? Create an account
-              </label>
+              </label> */}
               <div class="mt-1">
                 <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"/>
               </div>
