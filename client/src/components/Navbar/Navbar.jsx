@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from "./../../assets/Img/aaps2.png";
-import { BrowserRouter as Router, Link}  from "react-router-dom";
+// import { BrowserRouter as Router, Link}  from "react-router-dom";
 
 
 const Navbar = () => {

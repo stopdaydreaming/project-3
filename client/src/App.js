@@ -2,12 +2,12 @@ import "./App.css";
 import "./assets/output.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Avatar from "./components/Avatar/Avatar";
-import Button from "./components/Button/Button";
-import Card from "./components/Card/Card";
-import NewUsr from "./components/NewUsr/NewUsr";
-import Profile from "./components/Profile/Profile";
-import Radio from "./components/Radio/Radio";
+// import Avatar from "./components/Avatar/Avatar";
+// import Button from "./components/Button/Button";
+// import Card from "./components/Card/Card";
+// import NewUsr from "./components/NewUsr/NewUsr";
+// import Profile from "./components/Profile/Profile";
+// import Radio from "./components/Radio/Radio";
 import Landing from "./pages/Landing/Landing";
 import Team from "./pages/Team";
 import Events from "./pages/Events";
