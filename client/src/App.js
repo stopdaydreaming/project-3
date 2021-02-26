@@ -17,6 +17,7 @@ function App() {
     <div className="App">
       <Navbar />
       <SignIn />
+      <Profile />
     </div>
   );
 }
