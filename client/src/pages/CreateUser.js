@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Dropdown from "../components/Dropdown/Dropdown";
@@ -13,15 +12,6 @@ const CreateUser = () => {
     "steven",
     "angel"
   ];
-=======
-import React from 'react';
-
-const CreateUser = () => {
-    return (
-        <div>
-            
-            <h1>Create User Page</h1>
->>>>>>> c3db20e4895e965abb060945446ef0d9fcd50794
 
   return (
     <div>
