@@ -8,10 +8,10 @@ import Card from "./components/Card/Card";
 import NewUsr from "./components/NewUsr/NewUsr";
 import Profile from "./components/Profile/Profile";
 import Radio from "./components/Radio/Radio";
-import Landing from "./Pages/Landing/Landing";
+import Landing from "./pages/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
-import Team from "./Pages/Team";
-import Events from "./Pages/Events";
+import Team from "./pages/Team";
+import Events from "./pages/Events";
 
 function App() {
   return (
