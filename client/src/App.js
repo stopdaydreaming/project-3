@@ -1,7 +1,7 @@
 import './App.css';
 import './assets/output.css'
 import { BrowserRouter as Router}  from "react-router-dom";
-import SignIn from './components/SignIn/SignIn';
+
 import Navbar from './components/Navbar/Navbar';
 import Avatar from './components/Avatar/Avatar';
 import Button from './components/Button/Button';
@@ -10,6 +10,7 @@ import NewUsr from './components/NewUsr/NewUsr';
 import Profile from './components/Profile/Profile';
 import Radio from './components/Radio/Radio';
 import Team from './components/Team/Team';
+import Landing from './Pages/Landing/Landing';
 
 
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <SignIn />
+      <Landing /> 
     </div>
   );
 }
