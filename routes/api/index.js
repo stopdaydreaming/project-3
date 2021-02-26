@@ -2,7 +2,7 @@ const router = require("express").Router();
 const characterRoutes = require("./characters")
 const userRoutes = require ("./users")
 
-// Book routes
+// characters routes
 
 
 router.use("/characters", characterRoutes);
