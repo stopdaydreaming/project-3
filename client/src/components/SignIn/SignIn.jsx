@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { BrowserRouter as Router}  from "react-router-dom";
 import Land from "./../../assets/Img/naruto.jpg";
 import Logo from "./../../assets/Img/ap.png";
 
@@ -15,12 +17,12 @@ class SignIn extends Component {
               </h2>
               <p class="mt-2 text-sm text-gray-600 max-w">
                 New to Animeet?
-                <a
-                  href="#"
-                  class="font-medium text-indigo-600 hover:text-indigo-500"
-                >
+                <Router>
+                <Link to="/create" class="font-medium text-indigo-600 hover:text-indigo-500">
                   &nbsp;Create an account
-                </a>
+                </Link>
+                </Router>
+
               </p>
             </div>
 
