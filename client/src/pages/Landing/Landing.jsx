@@ -17,11 +17,11 @@ const Landing = () => {
               </h2>
               <p class="mt-2 text-sm text-gray-600 max-w">
                 New to Animeet?
-                <Router>
-                <Link to="/create" class="font-medium text-indigo-600 hover:text-indigo-500">
+                <a
+                href="/create" class="font-medium text-indigo-600 hover:text-indigo-500">
                   &nbsp;Create an account
-                </Link>
-                </Router>
+                </a>
+                
 
               </p>
             </div>
