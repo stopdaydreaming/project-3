@@ -1,5 +1,6 @@
 import React from "react";
 // import CharacterDropdown from "../components/Dropdowns/CharacterDropdown";
+import { BrowserRouter as Router, useHistory } from "react-router-dom";
 import girl from "../assets/Img/girl.jpg";
 import avatar from "../assets/Img/avatar_blue.png";
 
@@ -13,6 +14,12 @@ const CreateUser = () => {
   //   "steven",
   //   "angel"
   // ];
+
+  const history = useHistory();
+  function viewProfile(event) {
+    event.preventDefault();
+    history.push("/profile");
+  }
 
   return (
     <div class="relative bg-white">
@@ -36,8 +43,7 @@ const CreateUser = () => {
               Create your account.
             </h3>
             <form
-              action="#"
-              method="POST"
+              onSubmit={viewProfile}
               class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
               <div class="sm:col-span-2">
