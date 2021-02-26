@@ -9,7 +9,7 @@ class Profile extends Component {
     <div class="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
     <div class="mx-auto text-base max-w-prose lg:max-w-none">
       <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">AniPlayer Profile</h2>
-      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Meet Kinmbella69</h3>
+      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Meet Kimbella69</h3>
     </div>
     <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
       <div class="relative lg:row-start-1 lg:col-start-2">
