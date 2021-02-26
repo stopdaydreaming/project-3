@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Logo from "./../../assets/Img/aaps2.png";
 
-class Navbar extends Component {
+class OldNavbar extends Component {
   render() {
     return (
       <nav class="bg-gray-800">
@@ -40,4 +40,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default OldNavbar;

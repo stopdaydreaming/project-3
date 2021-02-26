@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router}  from "react-router-dom";
 import Land from "./../../assets/Img/naruto.jpg";
 import Logo from "./../../assets/Img/ap.png";
 
-class SignIn extends Component {
-  render() {
+
+const Landing = () => {
     return (
-      <div class="min-h-screen bg-white flex">
+        <div class="min-h-screen bg-white flex">
         <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div class="mx-auto w-full max-w-sm lg:w-96">
             <div>
@@ -18,11 +18,11 @@ class SignIn extends Component {
               <p class="mt-2 text-sm text-gray-600 max-w">
                 New to Animeet?
                 <a
-                  href="/create"
-                  class="font-medium text-indigo-600 hover:text-indigo-500"
-                >
-                  Create an account
+                href="/create" class="font-medium text-indigo-600 hover:text-indigo-500">
+                  &nbsp;Create an account
                 </a>
+                
+
               </p>
             </div>
 
@@ -92,7 +92,6 @@ class SignIn extends Component {
         </div>
       </div>
     );
-  }
-}
+};
 
-export default SignIn;
+export default Landing;
