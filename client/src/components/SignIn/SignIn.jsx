@@ -16,7 +16,7 @@ class SignIn extends Component {
         <p class="mt-2 text-sm text-gray-600 max-w">
           New to Animeet?
           <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-          Create an account
+          &nbsp;Create an account
           </a>
         </p>     
       </div>
