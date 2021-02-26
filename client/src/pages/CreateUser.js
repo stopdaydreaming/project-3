@@ -1,10 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
 
 const CreateUser = () => {
     return (
         <div>
-            <Navbar />
+            
             <h1>Create User Page</h1>
 
                 <form action="#" method="POST" class="space-y-6">
