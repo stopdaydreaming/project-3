@@ -14,18 +14,20 @@ import Events from "./pages/Events";
 import CreateUser from "./pages/CreateUser";
 import CharacterSelect from "./pages/CharacterSelect";
 import Navbar from "./components/Navbar/Navbar";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
     <div className="App">
-    <Navbar />
+      <Navbar />
       <Router>
-      <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route exact path="/team" component={Team} />
-        <Route exact path="/events" component={Events} />
-        <Route exact path ="/create" component = {CreateUser} />
-        <Route exact path ="/characters" component = {CharacterSelect} />
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/team" component={Team} />
+          <Route exact path="/events" component={Events} />
+          <Route exact path="/create" component={CreateUser} />
+          <Route exact path="/characters" component={CharacterSelect} />
+          <Route exact path="/profile" component={Profile} />
         </Switch>
       </Router>
     </div>
