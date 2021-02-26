@@ -1,17 +1,16 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
 import Dropdown from "../components/Dropdown/Dropdown";
 
 const CreateUser = () => {
-  const characters = [
-    "bos",
-    "joe",
-    "naruto",
-    "inuyasha",
-    "sailor moon",
-    "steven",
-    "angel"
-  ];
+  // const characters = [
+  //   "bos",
+  //   "joe",
+  //   "naruto",
+  //   "inuyasha",
+  //   "sailor moon",
+  //   "steven",
+  //   "angel"
+  // ];
 
   return (
     <div>
