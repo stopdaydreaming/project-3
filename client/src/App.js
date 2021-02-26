@@ -11,8 +11,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from "./pages/Landing/Landing";
 import Team from "./pages/Team";
 import Events from "./pages/Events";
-import CreateUser from "./pages/CreateUser"
-import Navbar from "./components/Navbar/Navbar"
+import CreateUser from "./pages/CreateUser";
+import CharacterSelect from "./pages/CharacterSelect";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/team" component={Team} />
         <Route exact path="/events" component={Events} />
         <Route exact path ="/create" component = {CreateUser} />
+        <Route exact path ="/characters" component = {CharacterSelect} />
         </Switch>
       </Router>
     </div>
