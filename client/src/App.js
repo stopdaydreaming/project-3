@@ -13,7 +13,6 @@ import Team from './components/Team/Team';
 import Landing from './Pages/Landing/Landing';
 
 
-
 function App() {
   return (
     <div className="App">
