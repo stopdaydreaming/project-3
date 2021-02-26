@@ -1,5 +1,6 @@
 import './App.css';
 import './assets/output.css'
+import { BrowserRouter as Router}  from "react-router-dom";
 import SignIn from './components/SignIn/SignIn';
 import Navbar from './components/Navbar/Navbar';
 import Avatar from './components/Avatar/Avatar';
@@ -17,21 +18,6 @@ function App() {
     <div className="App">
       <Navbar />
       <SignIn />
-      <Team />
-      <br/>
-      <Avatar />
-      <br/>
-      <Button />
-      <br/>
-      <Card />
-      <br/>
-      <NewUsr />
-      <br/>
-      <Profile />
-      <br/>
-      <Radio />
-  
-    
     </div>
   );
 }
