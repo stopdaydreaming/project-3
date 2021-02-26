@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import NewUsr from "./components/NewUsr/NewUsr";
 // import Profile from "./components/Profile/Profile";
 // import Radio from "./components/Radio/Radio";
-import Landing from "./pages/Landing/Landing";
+import Landing from "./pages/Landing";
 import Team from "./pages/Team";
 import Events from "./pages/Events";
 import CreateUser from "./pages/CreateUser";
