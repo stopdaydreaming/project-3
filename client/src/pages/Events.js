@@ -45,46 +45,56 @@ const Events = () => {
     </div>
     <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
      
-      <div class="pt-12 sm:pt-16 lg:pt-20">
-        <h2 class="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
-          On a mission to empower teams
-        </h2>
-        <div class="mt-6 text-gray-500 space-y-6">
-          <p class="text-lg">
-            Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.
-          </p>
-          <p class="text-base leading-7">
-            Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
-          </p>
-          <p class="text-base leading-7">
-            Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
-          </p>
-        </div>
+    <div class="flex flex-col">
+  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Event
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Location
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Date
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Event Fee
+              </th>
+              <th scope="col" class="relative px-6 py-3">
+                <span class="sr-only">Attend</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+              Huntsville AnimeDay 2021
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+              Huntsville, AL
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+              March 6, 2021
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                $60
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                <a href="#" class="text-indigo-600 hover:text-indigo-900">Attend</a>
+              </td>
+            </tr>
+          
+          </tbody>
+        </table>
       </div>
-     
-      <div class="mt-10">
-        <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
-          <div class="border-t-2 border-gray-100 pt-6">
-            <dt class="text-base font-medium text-gray-500">Founded</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">2021</dd>
-          </div>
-          <div class="border-t-2 border-gray-100 pt-6">
-            <dt class="text-base font-medium text-gray-500">Employees</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">5</dd>
-          </div>
-          <div class="border-t-2 border-gray-100 pt-6">
-            <dt class="text-base font-medium text-gray-500">Beta Users</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">521</dd>
-          </div>
-          <div class="border-t-2 border-gray-100 pt-6">
-            <dt class="text-base font-medium text-gray-500">Raised</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">$25M</dd>
-          </div>
-        </dl>
-        <div class="mt-10">
-          <a href="#" class="text-base font-medium text-indigo-600"> Learn more about how we're changing the world <span aria-hidden="true">&rarr;</span> </a>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 </div>
