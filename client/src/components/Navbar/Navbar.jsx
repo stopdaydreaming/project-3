@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/"> <img
-                  className="hidden xl:block h-8 w-auto"
+                  className="hidden xl:block h-12 w-auto"
                   src={Logo}
                   alt="Aniplay"
                 /> </a>
