@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the charactersController
+// Defining methods for the teamsController
 module.exports = {
   findAll: function(req, res) {
     db.Book
