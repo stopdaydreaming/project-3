@@ -42,7 +42,7 @@ class Profile extends Component {
     <dl class="sm:divide-y sm:divide-gray-200">
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
         <dt class="text-lg font-bold text-gray-500">
-          User Name
+          Username
         </dt>
         <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2">
           Kimbella69
@@ -58,7 +58,7 @@ class Profile extends Component {
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
         <dt class="text-lg font-bold text-gray-500">
-          Team Name
+          Team
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
           Sailor Moon Beams
