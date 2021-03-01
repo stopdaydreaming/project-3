@@ -6,7 +6,7 @@ const eventSchema = new Schema({
   location: { type: String, required: true },
   city: { type: String, required: true },
   state: { type: String, required: true },
-  date: { type: Date, required: true },
+  date: { type: String, required: true },
 });
 
 const Event = mongoose.model("Event", eventSchema)

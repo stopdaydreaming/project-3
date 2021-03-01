@@ -8,7 +8,8 @@ const Events = () => {
     // axios get to fetch all events
     // set into state using setEvents
     axios.get("/api/events").then((response) => {
-      console.log(response);
+      console.log(response)
+      setEvents(response.data)
     });
   }, []);
 
@@ -121,6 +122,18 @@ const Events = () => {
                           scope="col"
                           class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                         >
+                          City
+                        </th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          State
+                        </th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                        >
                           Date
                         </th>
 
@@ -130,15 +143,22 @@ const Events = () => {
                       </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
-                      <tr>
+                    {events.map((event) => {
+                      return <tr>
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                          Huntsville AnimeDay 2021
+                          {event.name}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          Huntsville, AL
+                          {event.location}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          March 6, 2021
+                          {event.city}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {event.state}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {event.date}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <a
@@ -149,6 +169,8 @@ const Events = () => {
                           </a>
                         </td>
                       </tr>
+                    })}
+
                     </tbody>
                   </table>
                 </div>
