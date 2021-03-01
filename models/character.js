@@ -1,14 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
-  username: { type: String, required: true },
-  profileImage: { type: String, required: true },
-  mainCharacter: {type: Schema.Types.ObjectId, ref: "Character"},
-  city: { type: String, },
-  state: { type: String }
+const characterSchema = new Schema({
+  title: { type: String, required: true },
+  name: { type: String, required: true },
+  photo: { type: String, required: true },
 });
 
-const User = mongoose.model("Character", userSchema);
+const Character = mongoose.model("Character", characterSchema);
 
-module.exports = User;
+module.exports = Character;
