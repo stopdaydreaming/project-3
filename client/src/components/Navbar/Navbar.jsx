@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/"> <img
-                  className="hidden lg:block h-8 w-auto"
+                  className="hidden xl:block h-8 w-auto"
                   src={Logo}
                   alt="Aniplay"
                 /> </a>
@@ -20,11 +20,11 @@ const Navbar = () => {
                 <div className="flex space-x-4">
                 
                   <a href="/team"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                   >
                     Team
                   </a>
-                  <a href ="/events" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  <a href ="/events" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                   >
                     Events
                   </a>
