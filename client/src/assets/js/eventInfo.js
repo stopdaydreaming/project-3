@@ -52,10 +52,12 @@ const event5 = new EventData({
 
 const defaultList = [event1, event2, event3, event4, event5];
 
-EventData.insertMany(defaultList, function (err) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Successfully saved default events to database");
-  }
-});
+// EventData.insertMany(defaultList, function (err) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("Successfully saved default events to database");
+//   }
+// });
+
+EventData.find({})
