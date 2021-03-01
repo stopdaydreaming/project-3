@@ -23,7 +23,7 @@ const Landing = () => {
               Sign in to your account
             </h2>
             <p className="mt-2 text-sm text-gray-600 max-w">
-              New to Animeet?
+              New to AniPlay?
               <a
                 href="/create"
                 className="font-medium text-indigo-600 hover:text-indigo-500"
