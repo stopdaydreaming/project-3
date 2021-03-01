@@ -8,15 +8,15 @@ class Profile extends Component {
   <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
     <div class="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
     <div class="mx-auto text-base max-w-prose lg:max-w-none">
-      <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">AniPlayer Profile</h2>
-      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Meet Kimbella69</h3>
+      <h2 class="text-2xl text-indigo-600 font-semibold tracking-wide uppercase">AniPlayer Profile</h2>
+      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight underline text-gray-900 sm:text-4xl">Meet Kimbella69</h3>
     </div>
     <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
       <div class="relative lg:row-start-1 lg:col-start-2">
         <svg class="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
           <defs>
             <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              <rect x="0" y="0" width="4" height="4" class="text-indigo-500" fill="currentColor" />
             </pattern>
           </defs>
           <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
@@ -34,22 +34,22 @@ class Profile extends Component {
       
 <div class="bg-white shadow overflow-hidden sm:rounded-lg">
   <div class="px-4 py-5 sm:px-6">
-    <h3 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+    <h3 class="text-xl text-indigo-600 font-bold tracking-wide uppercase">
       AniPlayer Information
     </h3>
   </div>
   <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
     <dl class="sm:divide-y sm:divide-gray-200">
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-sm font-medium text-gray-500">
+        <dt class="text-lg font-bold text-gray-500">
           User Name
         </dt>
-        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+        <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2">
           Kimbella69
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-sm font-medium text-gray-500">
+        <dt class="text-lg font-bold text-gray-500">
           Character 
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -57,7 +57,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-sm font-medium text-gray-500">
+        <dt class="text-lg font-bold text-gray-500">
           Team Name
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -65,7 +65,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-sm font-medium text-gray-500">
+        <dt class="text-lg font-bold text-gray-500">
           City
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -73,7 +73,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-sm font-medium text-gray-500">
+        <dt class="text-lg font-bold text-gray-500">
           State
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -81,7 +81,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-sm font-medium text-gray-500">
+        <dt class="text-lg font-bold text-gray-500">
           About
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -96,20 +96,20 @@ class Profile extends Component {
         <table class="min-w-full divide-y divide-gray-200">
           <thead class="bg-gray-50">
             <tr>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-indigo-600 uppercase tracking-wider">
                 Event Name
               </th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">
                 Event Location
               </th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">
                 Date
               </th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">
                 Status
               </th>
               <th scope="col" class="relative px-6 py-3">
-                <span class="sr-only">Edit</span>
+                <span class="sr-only">Attend</span>
               </th>
             </tr>
           </thead>
@@ -130,7 +130,7 @@ class Profile extends Component {
                 </span>
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                <a href="#" class="text-indigo-600 hover:text-indigo-900">Attend</a>
               </td>
             </tr>
           </tbody>
