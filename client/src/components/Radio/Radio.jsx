@@ -13,7 +13,7 @@ class Radio extends Component {
                 <div class="flex items-center h-5">
                   <input id="settings-option-0" name="privacy_setting" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 cursor-pointer border-gray-300" checked/>
                 </div>
-                <label for="settings-option-0" class="ml-3 flex flex-col cursor-pointer">
+                <label htmlFor="settings-option-0" class="ml-3 flex flex-col cursor-pointer">
                   <span class="block text-sm font-medium">
                     Public access
                   </span>
@@ -27,7 +27,7 @@ class Radio extends Component {
                 <div class="flex items-center h-5">
                   <input id="settings-option-1" name="privacy_setting" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 cursor-pointer border-gray-300"/>
                 </div>
-                <label for="settings-option-1" class="ml-3 flex flex-col cursor-pointer">
+                <label htmlFor="settings-option-1" class="ml-3 flex flex-col cursor-pointer">
                   <span class="block text-sm font-medium">
                     Private to Project Members
                   </span>
@@ -41,7 +41,7 @@ class Radio extends Component {
                 <div class="flex items-center h-5">
                   <input id="settings-option-2" name="privacy_setting" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 cursor-pointer border-gray-300"/>
                 </div>
-                <label for="settings-option-2" class="ml-3 flex flex-col cursor-pointer">
+                <label htmlFor="settings-option-2" class="ml-3 flex flex-col cursor-pointer">
                   <span class="block text-sm font-medium">
                     Private to you
                   </span>
