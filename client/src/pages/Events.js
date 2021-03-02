@@ -16,21 +16,21 @@ const Events = () => {
   }, []);
 
   return (
-    <div class="relative bg-gray-900 py-16 sm:py-24">
-      <div class="mx-auto text-base max-w-prose lg:max-w-none">
-      <h2 class="text-2xl text-indigo-500 font-bold tracking-wide uppercase">AniPlay Events</h2>
-      <h3 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Discover & Plan Events</h3>
+    <div className="relative bg-gray-900 py-16 sm:py-24">
+      <div className="mx-auto text-base max-w-prose lg:max-w-none">
+      <h2 className="text-2xl text-indigo-500 font-bold tracking-wide uppercase">AniPlay Events</h2>
+      <h3 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Discover & Plan Events</h3>
     <br/>
     </div>
-      <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
-        <div class="relative sm:py-16 lg:py-0">
+      <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+        <div className="relative sm:py-16 lg:py-0">
           <div
             aria-hidden="true"
-            class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+            className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div class="absolute inset-y-0 right-1/2 w-1/2 h-2/3 bg-indigo-500 bg-opacity-30 rounded-r-3xl lg:right-72"></div>
+            <div className="absolute inset-y-0 right-1/2 w-1/2 h-2/3 bg-indigo-500 bg-opacity-30 rounded-r-3xl lg:right-72"></div>
             <svg
-              class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
+              className="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
               width="404"
               height="392"
               fill="none"
@@ -50,7 +50,7 @@ const Events = () => {
                     y="0"
                     width="4"
                     height="4"
-                    class="text-indigo-500"
+                    className="text-indigo-500"
                     fill="currentColor"
                   />
                 </pattern>
@@ -62,34 +62,34 @@ const Events = () => {
               />
             </svg>
           </div>
-          <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-            <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
+          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+            <div className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
               <img
-                class="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
                 src={Event}
                 alt=""
               />
-              <div class="absolute inset-0 bg-indigo-500"></div>
-              <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90"></div>
+              <div className="absolute inset-0 bg-indigo-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90"></div>
               <img
-                class="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
                 src={Event}
                 alt=""
               />
-              <div class="relative px-8">
+              <div className="relative px-8">
                 <div>
                   <img
-                    class="h-12"
+                    className="h-12"
                     src={Logo}
                     alt="Workcation"
                   />
                 </div>
-                <blockquote class="mt-8">
-                  <div class="relative text-lg font-medium text-white md:flex-grow">
+                <blockquote className="mt-8">
+                  <div className="relative text-lg font-medium text-white md:flex-grow">
                    
                     
                   </div>
-                  <footer class="mt-4">
+                  <footer className="mt-4">
                    
                   </footer>
                 </blockquote>
@@ -97,72 +97,72 @@ const Events = () => {
             </div>
           </div>
         </div>
-        <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
-          <div class="flex flex-col">
-            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-              <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                  <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
+        <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+          <div className="flex flex-col">
+            <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                  <table className="min-w-full divide-y divide-gray-200">
+                    <thead className="bg-gray-50">
                       <tr>
                         <th
                           scope="col"
-                          class="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
                         >
                           Event
                         </th>
                         <th
                           scope="col"
-                          class="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
                         >
                           Location
                         </th>
                         <th
                           scope="col"
-                          class="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
                         >
                           City
                         </th>
                         <th
                           scope="col"
-                          class="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
                         >
                           State
                         </th>
                         <th
                           scope="col"
-                          class="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-left text-sm font-bold text-indigo-500 uppercase tracking-wider"
                         >
                           Date
                         </th>
 
-                        <th scope="col" class="relative px-6 py-3">
-                          <span class="sr-only">Attend</span>
+                        <th scope="col" className="relative px-6 py-3">
+                          <span className="sr-only">Attend</span>
                         </th>
                       </tr>
                     </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
+                    <tbody className="bg-white divide-y divide-gray-200">
                     {events.map((event) => {
                       return <tr>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">
                           {event.name}
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {event.location}
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {event.city}
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {event.state}
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {event.date}
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <a
                             href="#"
-                            class="text-indigo-600 hover:text-indigo-900"
+                            className="text-indigo-600 hover:text-indigo-900"
                           >
                             Attend
                           </a>
