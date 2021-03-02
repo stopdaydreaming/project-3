@@ -141,7 +141,7 @@ const CreateUser = () => {
                         <div class="text-sm">
                           <p class="font-medium text-gray-900">{character.title}</p>
                           <div class="text-gray-500">
-                            <p class="sm:inline">{character.animeography.name}</p>
+                            <p class="sm:inline">{character.animeography[0].name}</p>
                             <span
                               class="hidden sm:inline sm:mx-1"
                               aria-hidden="true"
