@@ -30,7 +30,7 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <a href="/" className="text-gray-400 hover:text-gray-300">
                         <span className="sr-only">Twitter</span>
                         <svg
                           className="w-5 h-5"
@@ -43,7 +43,7 @@ const Team = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <a href="/" className="text-gray-400 hover:text-gray-300">
                       <i className="fas fa-user-plus"><i className="fas fa-user-minus"></i></i>
                         <span className="sr-only">LinkedIn</span>
                         <svg
@@ -75,7 +75,7 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <a href="/" className="text-gray-400 hover:text-gray-300">
                         <span className="sr-only">Twitter</span>
                         <svg
                           className="w-5 h-5"
@@ -88,7 +88,7 @@ const Team = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus"><i className="fas fa-user-minus"></i></i>
+                      <a href="/" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus"><i className="fas fa-user-minus"></i></i>
                         <span className="sr-only">LinkedIn</span>
                         <svg
                           className="w-5 h-5"
@@ -123,7 +123,7 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus padding"></i><i className="fas fa-user-minus"></i>
+                      <a href="/" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus padding"></i><i className="fas fa-user-minus"></i>
                         <span className="sr-only">Twitter</span>
                         <svg
                           className="w-5 h-5"
@@ -136,7 +136,7 @@ const Team = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <a href="/" className="text-gray-400 hover:text-gray-300">
                         <span className="sr-only">LinkedIn</span>
                         <svg
                           className="w-5 h-5"
