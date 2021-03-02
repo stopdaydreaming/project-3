@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProfilePic from "./../../assets/Img/sms.jpg";
+
 class Profile extends Component {
   render() {
     return (
@@ -9,7 +10,7 @@ class Profile extends Component {
     <div class="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
     <div class="mx-auto text-base max-w-prose lg:max-w-none">
       <h2 class="text-2xl text-indigo-600 font-semibold tracking-wide uppercase">AniPlayer Profile</h2>
-      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight underline text-gray-900 sm:text-4xl">Meet Kimbella69</h3>
+      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight underline text-gray-900 sm:text-4xl">Meet {this.props.currentUser.username}</h3>
     </div>
     <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
       <div class="relative lg:row-start-1 lg:col-start-2">
@@ -45,7 +46,7 @@ class Profile extends Component {
           Username
         </dt>
         <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2">
-          Kimbella69
+          {this.props.currentUser.username}
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -53,7 +54,7 @@ class Profile extends Component {
           Character 
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-          Sailor Moon
+          {this.props.currentUser.mainCharacter.name}
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -61,7 +62,7 @@ class Profile extends Component {
           Team
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-          Sailor Moon Beams
+          {this.props.currentUser.mainCharacter.title}
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -69,7 +70,7 @@ class Profile extends Component {
           City
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-          Atlanta
+          {this.props.currentUser.city}
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -77,7 +78,7 @@ class Profile extends Component {
           State
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-          Georgia
+          {this.props.currentUser.state}
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
