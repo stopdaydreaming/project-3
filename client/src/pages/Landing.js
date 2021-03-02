@@ -4,9 +4,24 @@ import { BrowserRouter as Router, useHistory } from "react-router-dom";
 
 import Land from "../assets/Img/naruto.jpg";
 import Logo from "../assets/Img/ap.png";
+// import GoogleLogin from "react-google-login";
+import GoogleLogin, {useGoogleLogin} from "react-google-login"
+import Login from "../components/Login/Login";
+import HookLogin from "../components/Login/HookLogin";
+
+
 
 const Landing = () => {
+
   
+ 
+  //  const responseGoogle = (response) => {
+  //    console.log(response);
+  //    console.log(response.profileObj);
+  //  };
+
+  
+
   const history = useHistory();
   function viewProfile(event) {
     event.preventDefault();
@@ -18,7 +33,11 @@ const Landing = () => {
       <div className="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div className="mx-auto w-full max-w-sm lg:w-96">
           <div>
-            <img className="h-100 w-100 align-center" src={Logo} alt="Workflow" />
+            <img
+              className="h-100 w-100 align-center"
+              src={Logo}
+              alt="Workflow"
+            />
             <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
               Sign in to your account
             </h2>
@@ -31,6 +50,22 @@ const Landing = () => {
                 &nbsp;Create an account
               </a>
             </p>
+            <br />
+            <h2>
+              <strong>or</strong>
+            </h2>
+            <br />
+             <h2>Sign in with Google</h2> 
+            <br />
+            <HookLogin />
+            {/* <Login /> */}
+            {/* <GoogleLogin
+              clientID="290641540556-ks696c7llt77ibqkmli3l416nbk15ima.apps.googleusercontent.com"
+              buttonText="Login"
+              onSuccess={this.responseGoogle}
+              onFailure={this.responseGoogle}
+              cookiePolicy={"single_host_origin"}
+            /> */}
           </div>
 
           <div className="mt-8">
@@ -79,7 +114,6 @@ const Landing = () => {
 
                 <div>
                   <button
-                    
                     type="submit"
                     className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
