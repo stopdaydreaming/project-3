@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Logo from "../assets/Img/aaps2.png";
-import Event from "../assets/Img/cos.jpg";
+import Event from "../assets/Img/sword.png";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
