@@ -5,7 +5,7 @@ import Logo from "./../../assets/Img/aaps2.png";
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-800">
+        <nav className="bg-indigo-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -20,11 +20,11 @@ const Navbar = () => {
                 <div className="flex space-x-4">
                 
                   <a href="/team"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                    className="text-white hover:bg-indigo-900 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
                   >
                     Team
                   </a>
-                  <a href ="/events" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                  <a href ="/events" className="text-white hover:bg-indigo-900 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
                   >
                     Events
                   </a>
