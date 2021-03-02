@@ -27,10 +27,15 @@ class Profile extends Component {
             <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
               <img class="rounded-lg shadow-lg object-cover object-center" src={ProfilePic} alt="User Profile pic" />
             </div>
+            <br></br>
+            <button type="button" class="inline-flex items-center px-8 py-4  border border-transparent shadow-sm text-lg leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Assemble Team
             
+</button>
           </figure>
         </div>
       </div>
+
+
       <div class="mt-8 lg:mt-0">
       
 <div class="bg-white shadow overflow-hidden sm:rounded-lg">
@@ -83,7 +88,7 @@ class Profile extends Component {
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
         <dt class="text-lg font-bold text-indigo-500">
-          About
+          Synopsis
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
           Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
