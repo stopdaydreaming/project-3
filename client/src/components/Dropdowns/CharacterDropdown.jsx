@@ -41,7 +41,7 @@ const CharacterDropdown = () => {
 
           <div class="absolute mt-1 w-full rounded-md bg-white shadow-lg">
             <ul
-              tabindex="-1"
+              tabIndex="-1"
               role="listbox"
               aria-labelledby="listbox-label"
               aria-activedescendant="listbox-item-3"
