@@ -10,7 +10,7 @@ class Profile extends Component {
     <div class="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
     <div class="mx-auto text-base max-w-prose lg:max-w-none">
       <h2 class="text-2xl text-indigo-600 font-semibold tracking-wide uppercase">AniPlayer Profile</h2>
-      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight underline text-gray-900 sm:text-4xl">Meet {this.props.currentUser.username}</h3>
+      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight  text-gray-900 sm:text-4xl">Welcome {this.props.currentUser.username}</h3>
     </div>
     <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
       <div class="relative lg:row-start-1 lg:col-start-2">
@@ -42,7 +42,7 @@ class Profile extends Component {
   <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
     <dl class="sm:divide-y sm:divide-gray-200">
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-lg font-bold text-gray-500">
+        <dt class="text-lg font-bold text-indigo-500">
           Username
         </dt>
         <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2">
@@ -50,7 +50,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-lg font-bold text-gray-500">
+        <dt class="text-lg font-bold text-indigo-500">
           Character 
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -58,7 +58,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-lg font-bold text-gray-500">
+        <dt class="text-lg font-bold text-indigo-500">
           Team
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -66,7 +66,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-lg font-bold text-gray-500">
+        <dt class="text-lg font-bold text-indigo-500">
           City
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -74,7 +74,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-lg font-bold text-gray-500">
+        <dt class="text-lg font-bold text-indigo-500">
           State
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -82,7 +82,7 @@ class Profile extends Component {
         </dd>
       </div>
       <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-        <dt class="text-lg font-bold text-gray-500">
+        <dt class="text-lg font-bold text-indigo-500">
           About
         </dt>
         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -101,7 +101,7 @@ class Profile extends Component {
                 Event Name
               </th>
               <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">
-                Event Location
+                Location
               </th>
               <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">
                 Date
@@ -130,8 +130,23 @@ class Profile extends Component {
                   Active
                 </span>
               </td>
-              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Attend</a>
+            </tr>
+          </tbody>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                Anime Magic! 
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                Austin, TX
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                March 19-21 2021
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span class="px-2 inline-flex text-xs leading-5 centered font-semibold rounded-full bg-red-100 text-red-800">
+                  Cancelled
+                </span>
               </td>
             </tr>
           </tbody>
