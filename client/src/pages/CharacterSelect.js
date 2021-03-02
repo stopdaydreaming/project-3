@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import avatar from "../assets/Img/avatar_blue.png";
 import axios from "axios";
-
 // {characters.map((character) => {
 //   return
 // })}
-
 const CharacterSelect = () => {
   const [characters, setCharacters] = useState([]);
-
   useEffect(() => {
     // axios get to fetch all events
     // set into state using setEvents
@@ -42,6 +39,13 @@ const CharacterSelect = () => {
                             <p class="text-indigo-600">{character.animeography[0].name}</p>
                           </div>
                         </div>
+                        
+                        <button
+                  type="submit"
+                  class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Select
+                </button>
                       </div>
                     </li>
                   );
@@ -52,5 +56,4 @@ const CharacterSelect = () => {
          
   );
 };
-
 export default CharacterSelect;
