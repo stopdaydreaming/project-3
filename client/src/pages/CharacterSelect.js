@@ -23,7 +23,7 @@ const CharacterSelect = () => {
           >
             <li
               id="radiogroup-option-0"
-              tabindex="0"
+              tabIndex="0"
               role="radio"
               aria-checked="true"
               class="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-indigo-500"
