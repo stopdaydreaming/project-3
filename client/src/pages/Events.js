@@ -16,10 +16,10 @@ const Events = () => {
   }, []);
 
   return (
-    <div class="relative bg-white py-16 sm:py-24">
+    <div class="relative bg-gray-900 py-16 sm:py-24">
       <div class="mx-auto text-base max-w-prose lg:max-w-none">
-      <h2 class="text-2xl text-indigo-600 font-semibold tracking-wide uppercase">AniPlay Events</h2>
-      <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight underline text-gray-900 sm:text-4xl">Discover & Plan Events</h3>
+      <h2 class="text-2xl text-indigo-500 font-bold tracking-wide uppercase">AniPlay Events</h2>
+      <h3 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Discover & Plan Events</h3>
     <br/>
     </div>
       <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -28,7 +28,7 @@ const Events = () => {
             aria-hidden="true"
             class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div class="absolute inset-y-0 right-1/2 w-full bg-purple-100 rounded-r-3xl lg:right-72"></div>
+            <div class="absolute inset-y-0 right-1/2 w-1/2 h-2/3 bg-indigo-500 bg-opacity-30 rounded-r-3xl lg:right-72"></div>
             <svg
               class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
               width="404"
