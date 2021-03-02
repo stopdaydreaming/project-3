@@ -16,6 +16,7 @@ import CreateUser from "./pages/CreateUser";
 import CharacterSelect from "./pages/CharacterSelect";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
+import Footer from "./components/Footer/Footer";
 
 // dummy data
 const sampleUser = {
@@ -23,34 +24,40 @@ const sampleUser = {
   profileImage: ProfilePic,
   mainCharacter: {
     title: "MoonLaDY",
-   name: "Sailor Moon",
-  photo: ProfilePic,
+    name: "Sailor Moon",
+    photo: ProfilePic
   },
   city: "Atlanta",
   state: "Georgia"
-}
+};
 
 // set state for currentUser
 // const [currentUser, setCurrentUser] = useState(sampleUser);
 const currentUser = sampleUser;
 
+const location = {
+  pathname: "/"
+};
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Router>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/team" component={Team} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/create" component={CreateUser} />
           <Route exact path="/characters" component={CharacterSelect} />
-          <Route path="/profile" render={()=> (
-            <Profile currentUser={currentUser}/> 
-          )} />
+          <Route
+            path="/profile"
+            render={() => <Profile currentUser={currentUser} />}
+          />
           {/* <Route exact path="/profile" component={Profile} /> */}
         </Switch>
+        <Footer />
       </Router>
+      {/* { !== "/" && <Footer/>} */}
     </div>
   );
 }

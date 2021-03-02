@@ -8,7 +8,7 @@ const Team = () => {
         <div class="space-y-12">
           <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-              Your Roster
+              Meet our Family
             </h2>
             <p class="text-xl text-gray-300">
               Welcome to your team page where you can add or delete characters on your team.
