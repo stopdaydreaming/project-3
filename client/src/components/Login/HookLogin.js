@@ -27,7 +27,7 @@ function HookLogin() {
     alert(
       `Logged in successfully welcome ${res.profileObj.name}.`
     );
-    history.push("/profile");
+    // history.push("/profile");
   };
 
   const onFailure = (res) => {
