@@ -117,13 +117,13 @@ const CreateUser = () => {
                 </div>
               </div>
 
-              <p>Select your character:</p>
+              {/* <p>Select your character:</p>
               <br></br>
               <fieldset>
                 {/* <legend id="radiogroup-label" class="sr-only">
                   Server size
                 </legend> */}
-                <ul
+                {/* <ul
                   class="space-y-4"
                   role="radiogroup"
                   aria-labelledby="radiogroup-label"
@@ -135,8 +135,8 @@ const CreateUser = () => {
                     tabIndex="0"
                     role="radio"
                     aria-checked="true"
-                    class="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-indigo-500"
-                  > <div class="rounded-lg border border-gray-300 bg-white px-6 py-4 hover:border-gray-400 sm:flex sm:justify-between">
+                    class="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-indigo-500"> 
+                    <div class="rounded-lg border border-gray-300 bg-white px-6 py-4 hover:border-gray-400 sm:flex sm:justify-between">
                       <div class="flex items-center">
                         <div class="text-sm">
                           <p class="font-medium text-gray-900">{character.title}</p>
@@ -168,8 +168,8 @@ const CreateUser = () => {
 
                   })}
 
-                </ul>
-              </fieldset>
+                </ul> */}
+              {/* </fieldset> */} 
 
               <div class="text-right sm:col-span-2">
                 <button
