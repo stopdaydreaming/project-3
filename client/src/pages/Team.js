@@ -52,7 +52,7 @@ const Team = () => {
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
-                          <path fillRule="evenodd" d="" clip-rule="evenodd" />
+                          <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
                       </a>
                     </li>
@@ -99,7 +99,7 @@ const Team = () => {
                           <path
                             fillRule="evenodd"
                             d=""
-                            clip-rule="evenodd"
+                            clipRule="evenodd"
                           />
                         </svg>
                       </a>
@@ -147,7 +147,7 @@ const Team = () => {
                           <path
                             fillRule="evenodd"
                             d=""
-                            clip-rule="evenodd"
+                            clipRule="evenodd"
                           />
                         </svg>
                       </a>
