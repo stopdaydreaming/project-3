@@ -27,9 +27,9 @@ const CreateUser = () => {
   // ];
 
   const history = useHistory();
-  function viewProfile(event) {
+  function chooseCharacter(event) {
     event.preventDefault();
-    history.push("/profile");
+    history.push("/characters");
   }
 
 //   function postUser(event) {
@@ -64,7 +64,7 @@ const CreateUser = () => {
               Create your account.
             </h3>
             <form
-              onSubmit={viewProfile}
+              onSubmit={chooseCharacter}
               class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
               <div class="sm:col-span-2">
@@ -174,9 +174,9 @@ const CreateUser = () => {
               <div class="text-right sm:col-span-2">
                 <button
                   type="submit"
-                  class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 fas fa-arrow-right"
                 >
-                  Create Account
+                   Choose A Character
                 </button>
               </div>
             </form>
