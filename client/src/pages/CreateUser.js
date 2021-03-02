@@ -21,6 +21,16 @@ const CreateUser = () => {
     history.push("/profile");
   }
 
+//   function postUser(event) {
+//     event.preventDefault();
+//     fetch('/api/users', {
+//     method: 'post',
+//     body: JSON.stringify(opts)
+//   }).then(function(response) {
+//     return response.json();
+//   })
+// }
+
   return (
     <div class="relative bg-white">
       <div class="lg:absolute lg:inset-0">
