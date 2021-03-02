@@ -22,11 +22,11 @@ const event1 = new EventData({
   date: "2021-03-06",
 });
 const event2 = new EventData({
-  name: "Huntsville Anime Day",
-  location: "Embassy Suites by Hilton Huntsville Hotel & Spa",
-  city: "Huntsville",
-  state: "Alabama",
-  date: "2021-03-06",
+  name: "Mizuumi-Con 2021",
+  location: "San Antonio Marriott Northwest",
+  city: "San Antonio",
+  state: "Texas",
+  date: "2021-04-03",
 });
 const event3 = new EventData({
   name: "My-Con",
