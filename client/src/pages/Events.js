@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Logo from "../assets/Img/aaps2.png";
-import Event from "../assets/Img/sword.png";
+import Event from "../assets/Img/moon.png";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -50,7 +50,7 @@ const Events = () => {
                     y="0"
                     width="4"
                     height="4"
-                    className="text-indigo-500"
+                    className="text-yellow-400"
                     fill="currentColor"
                   />
                 </pattern>
