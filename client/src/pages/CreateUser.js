@@ -69,7 +69,7 @@ const CreateUser = () => {
             >
               <div class="sm:col-span-2">
                 <label
-                  for="email"
+                  htmlFor="email"
                   class="block text-sm font-medium text-gray-700"
                 >
                   What's your username?
@@ -85,7 +85,7 @@ const CreateUser = () => {
               </div>
               <div class="sm:col-span-2">
                 <label
-                  for="city"
+                  htmlFor="city"
                   class="block text-sm font-medium text-gray-700"
                 >
                   What's your city
@@ -102,7 +102,7 @@ const CreateUser = () => {
 
               <div class="sm:col-span-2">
                 <label
-                  for="state"
+                  htmlFor="state"
                   class="block text-sm font-medium text-gray-700"
                 >
                   What's your state?
@@ -132,7 +132,7 @@ const CreateUser = () => {
                   {characters.map((character) => {
                     return                    <li
                     id="radiogroup-option-0"
-                    tabindex="0"
+                    tabIndex="0"
                     role="radio"
                     aria-checked="true"
                     class="group relative bg-white rounded-lg shadow-sm cursor-pointer focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-indigo-500"
@@ -163,6 +163,7 @@ const CreateUser = () => {
                       aria-hidden="true"
                     ></div>
                   </li>
+
 
 
                   })}
