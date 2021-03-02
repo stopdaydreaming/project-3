@@ -11,6 +11,7 @@ import ProfilePic from "./assets/Img/sms.jpg";
 // import Radio from "./components/Radio/Radio";
 import Landing from "./pages/Landing";
 import Team from "./pages/Team";
+import Teams from "./components/Teams/Teams";
 import Events from "./pages/Events";
 import CreateUser from "./pages/CreateUser";
 import CharacterSelect from "./pages/CharacterSelect";
@@ -38,6 +39,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Teams />
       <Router>
         <Switch>
           <Route exact path="/" component={Landing} />
