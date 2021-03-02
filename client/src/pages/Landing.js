@@ -22,10 +22,10 @@ const Landing = () => {
 
   
 
-  const history = useHistory();
+   const history = useHistory();
   function viewProfile(event) {
     event.preventDefault();
-    history.push("/profile");
+     history.push("/profile");
   }
 
   return (
