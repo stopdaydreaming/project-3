@@ -13,12 +13,12 @@ const Team = () => {
         <div className="space-y-12">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-              Meet our Family
+              Available Teams
             </h2>
             <p className="text-xl text-gray-300">
-              Welcome to your team page where you can add or delete characters
-              on your team.
+              Welcome to your team page where you can join or leave a team.
             </p>
+            <button>Back to Profile</button>
           </div>
           <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
             <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
@@ -38,7 +38,7 @@ const Team = () => {
                     <li>
                       <button
                         type="button"
-                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -54,7 +54,7 @@ const Team = () => {
                     <li>
                       <button
                         type="button"
-                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
@@ -88,7 +88,7 @@ const Team = () => {
                     <li>
                       <button
                         type="button"
-                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -104,7 +104,7 @@ const Team = () => {
                     <li>
                       <button
                         type="button"
-                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
@@ -138,7 +138,7 @@ const Team = () => {
                     <li>
                       <button
                         type="button"
-                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -154,7 +154,7 @@ const Team = () => {
                     <li>
                       <button
                         type="button"
-                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
@@ -200,7 +200,7 @@ const Team = () => {
                     <li>
                       <button
                         type="button"
-                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -216,7 +216,7 @@ const Team = () => {
                     <li>
                       <button
                         type="button"
-                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
