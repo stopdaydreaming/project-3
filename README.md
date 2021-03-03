@@ -23,9 +23,9 @@ Are you a lover of cosplay and Anime? The application Aniplay is the perfect app
 
 [View the deployed application here]()
 
-![Landing Page](./src/assets/Img/landingpg.PNG)
-![Create Account](./src/assets/Img/createacct.PNG)
-![Profile](./src/assets/Img/profile.PNG)
+![Landing Page](./client/src/assets/Img/landingpg.PNG)
+![Create Account](./client/src/assets/Img/createacct.PNG)
+![Profile](./client/src/assets/Img/profilepg.PNG)
 
 ## Built with 
 
@@ -37,19 +37,14 @@ These were the major frameworks used to build this application:
 * React JS 
 * Heroku    
 * Figma
-* Tailwinds 
-* API  
+* Tailwinds  
 * Shutterstock images 
-* Jikan API  
-*  
-*  
-*  
+* Jikan API 
+* Font Awesome
 
 ### Getting Started 
 
-
-
-### Installation 
+To get a local copy up and running follow these simple example steps.
 
 1.  `Clone the repo`
     `git clone https://github.com/your_username_/Project-Name.git`
@@ -61,6 +56,12 @@ These were the major frameworks used to build this application:
 4. `npm start`
 
 5. `run application in your local host`
+
+
+### Installation 
+
+
+
 
 ### Usage 
 
@@ -81,7 +82,7 @@ The following individuals contributed to the success of this application. You ca
 
 The following sites were used to make Aniplay a functioning application: 
 
-* [Aneme Cons API](https://animecons.com/events/schedule.php?year=2021)    
+* [Aneme Cons](https://animecons.com/events/schedule.php?year=2021)    
 
 * [Stackoverflow](https://stackoverflow.com/)        
 
