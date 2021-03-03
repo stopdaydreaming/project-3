@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { BrowserRouter as useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import Land from "../assets/Img/naruto.jpg";
 import Logo from "../assets/Img/ap.png";
@@ -96,13 +96,15 @@ const Landing = () => {
                       className="ml-2 block text-sm text-gray-900"
                     ></label>
                   </div>
-
+                  {/* 
                   <div className="text-sm">
                     <a
-                      href="/#"
+                      href="/"
                       className="font-medium text-indigo-600 hover:text-indigo-500"
-                    ></a>
-                  </div>
+                    >
+                      hello
+                    </a>
+                  </div> */}
                 </div>
 
                 <div>
