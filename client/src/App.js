@@ -37,6 +37,9 @@ const sampleUser = {
 // const [currentUser, setCurrentUser] = useState(sampleUser);
 const currentUser = sampleUser;
 
+const location = {
+  pathname: "/"
+};
 function App() {
   return (
     <div className="App">

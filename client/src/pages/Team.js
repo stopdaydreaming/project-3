@@ -169,7 +169,151 @@ const Team = () => {
               lectus sit pretium egestas vel mattis neque.
             </p>
           </div>
-          <ul></ul>
+          <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
+            <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
+              <div className="space-y-6 xl:space-y-10">
+                <img
+                  className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                  src={avatar}
+                  alt=""
+                />
+                <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
+                  <div className="font-medium text-lg leading-6 space-y-1">
+                    <h3 className="text-white">Sailor Moon</h3>
+                    <p className="text-indigo-400">Sailor Moon Beams</p>
+                  </div>
+
+                  <ul className="flex justify-center space-x-5">
+                    <li>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                        <i className="fas fa-user-plus"></i>
+                        <span className="sr-only">Twitter</span>
+                        <svg
+                          className="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          aria-hidden="true"
+                        >
+                          <path d="" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <i className="fas fa-user-minus"></i>
+                        <span className="sr-only">LinkedIn</span>
+                        <svg
+                          className="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          aria-hidden="true"
+                        >
+                          <path fillRule="evenodd" d="" clipRule="evenodd" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
+              <div className="space-y-6 xl:space-y-10">
+                <img
+                  className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                  src={avatar}
+                  alt=""
+                />
+                <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
+                  <div className="font-medium text-lg leading-6 space-y-1">
+                    <h3 className="text-white">Leonard Krasner</h3>
+                    <p className="text-indigo-400">Senior Designer</p>
+                  </div>
+
+                  <ul className="flex justify-center space-x-5">
+                    <li>
+                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus"></i>
+                        <span className="sr-only">Twitter</span>
+                        <svg
+                          className="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          aria-hidden="true"
+                        >
+                          <path d="" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                        <i className="fas fa-user-minus"></i>
+                        <span className="sr-only">LinkedIn</span>
+                        <svg
+                          className="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d=""
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
+              <div className="space-y-6 xl:space-y-10">
+                <img
+                  className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                  src={avatar}
+                  alt=""
+                />
+                <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
+                  <div className="font-medium text-lg leading-6 space-y-1">
+                    <h3 className="text-white">Leonard Krasner</h3>
+                    <p className="text-indigo-400">Senior Designer</p>
+                  </div>
+
+                  <ul className="flex justify-center space-x-5">
+                    <li>
+                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus text-lg padding "></i>
+                        <span className="sr-only">Twitter</span>
+                        <svg
+                          className="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          aria-hidden="true"
+                        >
+                          <path d="" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-minus"></i>
+                        <span className="sr-only">LinkedIn</span>
+                        <svg
+                          className="w-5 h-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d=""
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
