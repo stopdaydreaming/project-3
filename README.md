@@ -4,9 +4,8 @@
 ![GitHub license](https://img.shields.io/badge/Javascript-yellow)
 ![GitHub license](https://img.shields.io/badge/-node.js-green)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-![GitHub license](https://img.shields.io/badge/mySQL-blue)
 
-[View the deployed application here](https://github.com/mollymccollumwx/project2)
+
 # Table of Contents
 
 * [About the Project](#about-the-project)
@@ -20,9 +19,9 @@
 
 ## About the Project 
 
-Tired of going to the same old dog parks? Tired of walking the same old trails? This application 
+Are you a lover of cosplay and Anime? The application Aniplay is the perfect application to find and connect with your fellow cosplayers. Currently, there is a missing link in connecting with other cosplayers. This application not only allows you to search and find other cosplayers but also enables you to connect directly with them and plan to attend upcoming cosplay events. Aniplay will allow people the opportunity to build the perfect team for like minded individuals who love the same or similar anime characters. Aniplay also hosts an events section that will be regularly updated with upcoming events and allow users to plan to attend these events with their team members.
 
-* Preview of the project/screenshot 
+[View the deployed application here]()
 
 ![](./public/assets/images/.png)
 ![Dashboard](./public/assets/images/.png)
@@ -47,7 +46,7 @@ These were the major frameworks used to build this application:
 *  
 
 ### Getting Started 
-View deployed website
+
 
 
 ### Installation 
@@ -71,23 +70,22 @@ As a user, I want an application that allows me to connect with other cos player
 
 The following individuals contributed to the success of this application. You can view their Github profiles by clicking on their names:
 
-* [Daniel Guadalupe](https://github.com/mollymccollumwx)
+* [Daniel Guadalupe](https://github.com/danielthomas129)
 
 * [Selena Singleton](https://github.com/ssingle7)
 
-* [Lisa Copeland]()  
+* [Lisa Copeland](https://github.com/stopdaydreaming)  
 
-* [Derrick Hardison](https://github.com/ssingle7) 
+* [Derrick Hardison](https://github.com/derrickhardison) 
 
-* [Peter Colella](https://github.com/petercolella)
 
-The following sites were used to make Dog Meet Dog a functioning application: 
+The following sites were used to make Aniplay a functioning application: 
 
-* [Cloudinary API](https://cloudinary.com/documentation/image_upload_api_reference)    
+* [Aneme Cons API](https://animecons.com/events/schedule.php?year=2021)    
 
 * [Stackoverflow](https://stackoverflow.com/)        
 
-* [Canva](https://www.canva.com/)
+* [](h.com/)
 
 
 ### License  
