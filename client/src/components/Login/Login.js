@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {GoogleLogin} from "react-google-login"
-import { GoogleLogout } from "react-google-login";
-import { BrowserRouter as Router, useHistory } from "react-router-dom";
+// import { GoogleLogout } from "react-google-login";
+// import { BrowserRouter as Router, useHistory } from "react-router-dom";
 
 
 class Login extends Component {
