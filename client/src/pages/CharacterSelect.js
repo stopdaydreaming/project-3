@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import avatar from "../assets/Img/avatar_blue.png";
+// import avatar from "../assets/Img/avatar_blue.png";
 import axios from "axios";
 // import Cloud from import Logo from "../assets/Img/ap.png";
 ;

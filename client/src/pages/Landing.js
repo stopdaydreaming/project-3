@@ -1,31 +1,24 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { BrowserRouter as Router, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import Land from "../assets/Img/naruto.jpg";
 import Logo from "../assets/Img/ap.png";
 // import GoogleLogin from "react-google-login";
-import GoogleLogin, {useGoogleLogin} from "react-google-login"
-import Login from "../components/Login/Login";
+// import GoogleLogin, {useGoogleLogin} from "react-google-login"
+// import Login from "../components/Login/Login";
 import HookLogin from "../components/Login/HookLogin";
 
-
-
 const Landing = () => {
-
-  
- 
   //  const responseGoogle = (response) => {
   //    console.log(response);
   //    console.log(response.profileObj);
   //  };
 
-  
-
-   const history = useHistory();
+  const history = useHistory();
   function viewProfile(event) {
     event.preventDefault();
-     history.push("/profile");
+    history.push("/profile");
   }
 
   return (
@@ -101,13 +94,15 @@ const Landing = () => {
                       className="ml-2 block text-sm text-gray-900"
                     ></label>
                   </div>
-
+                  {/* 
                   <div className="text-sm">
                     <a
-                      href="#"
+                      href="/"
                       className="font-medium text-indigo-600 hover:text-indigo-500"
-                    ></a>
-                  </div>
+                    >
+                      hello
+                    </a>
+                  </div> */}
                 </div>
 
                 <div>

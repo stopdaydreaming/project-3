@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 // import CharacterDropdown from "../components/Dropdowns/CharacterDropdown";
-import { BrowserRouter as Router, useHistory } from "react-router-dom";
+import { BrowserRouter as useHistory } from "react-router-dom";
 import girl from "../assets/Img/girl.jpg";
-import avatar from "../assets/Img/avatar_blue.png";
+// import avatar from "../assets/Img/avatar_blue.png";
 import axios from 'axios'
 
 const CreateUser = () => {
