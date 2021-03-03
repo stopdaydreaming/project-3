@@ -16,8 +16,9 @@ const Landing = () => {
   //  };
 
   const history = useHistory();
-  function viewProfile(event) {
-    event.preventDefault();
+  
+  const viewProfile = (e) => {
+    e.preventDefault();
     history.push("/profile");
   }
 
