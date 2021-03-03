@@ -1,4 +1,4 @@
-# Aniplay 
+# Aniplay 🎆
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ![GitHub license](https://img.shields.io/badge/Javascript-yellow)
@@ -23,9 +23,9 @@ Are you a lover of cosplay and Anime? The application Aniplay is the perfect app
 
 [View the deployed application here]()
 
-![](./public/assets/images/.png)
-![Dashboard](./public/assets/images/.png)
-![Dashboard](./public/assets/images/.png)
+![Landing Page](./src/assets/Img/landingpg.PNG)
+![Create Account](./src/assets/Img/createacct.PNG)
+![Profile](./src/assets/Img/profile.PNG)
 
 ## Built with 
 
@@ -39,8 +39,8 @@ These were the major frameworks used to build this application:
 * Figma
 * Tailwinds 
 * API  
-*  
-*  
+* Shutterstock images 
+* Jikan API  
 *  
 *  
 *  
@@ -64,7 +64,7 @@ These were the major frameworks used to build this application:
 
 ### Usage 
 
-As a user, I want an application that allows me to connect with other cos players to create teams and attend future events 
+As a user, I want an application that allows me to connect with other cos players to create teams and attend future events. I can create an account or login as a current user. After creating an account, I can build a team of anime characters and search for future events to attend with my team.
 
 ### Contributing
 
@@ -85,7 +85,7 @@ The following sites were used to make Aniplay a functioning application:
 
 * [Stackoverflow](https://stackoverflow.com/)        
 
-* [](h.com/)
+* [Shutterstock](https://www.shutterstock.com/)
 
 
 ### License  
