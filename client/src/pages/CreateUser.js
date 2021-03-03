@@ -4,13 +4,15 @@ import { useHistory } from "react-router-dom";
 import girl from "../assets/Img/girl.jpg";
 // import avatar from "../assets/Img/avatar_blue.png";
 import axios from "axios";
+import CharacterSelect from "./CharacterSelect";
 
 const CreateUser = () => {
   // const [characters, setCharacters] = useState([]);
 
   const [username, setUsername] = useState("");
-  const [city, setCity] = useState("")
-  const [state, setState] = useState("")
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [userId, setUserId] = useState("");
 
   // useEffect(() => {
   //   // axios get to fetch all events
@@ -26,27 +28,26 @@ const CreateUser = () => {
   const collectProfileInfo = (e) => {
     e.preventDefault();
 
-    axios.post("/api/users", {username, city, state})
-    .then((response)=> {
-       console.log(response)
-       alert("Profile created!")
-       history.push("/characters");
-    })
-       .catch((err)=> {
-         if (err) {
-           console.log(err)
-         } 
-       })
-    
+    axios
+      .post("/api/users", { username, city, state })
+      .then((response) => {
+        console.log(response);
+        setUserId(response.data._id);
+        <CharacterSelect userId = {userId} />
+        console.log(userId)
+        alert("Profile created!");
+        history.push("/characters");
+      })
+      .catch((err) => {
+        if (err) {
+          console.log(err);
+        }
+      });
 
     console.log("save user info");
-
-    
   };
 
-  function saveUserInfo() {
- 
-  }
+  function saveUserInfo() {}
 
   //axios.post("/api/users", )
 
@@ -99,7 +100,7 @@ const CreateUser = () => {
                     type="text"
                     value={username}
                     onChange={(e) => {
-                      setUsername(e.target.value)
+                      setUsername(e.target.value);
                     }}
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   />
@@ -119,7 +120,7 @@ const CreateUser = () => {
                     id="city"
                     value={city}
                     onChange={(e) => {
-                      setCity(e.target.value)
+                      setCity(e.target.value);
                     }}
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   />
@@ -140,7 +141,7 @@ const CreateUser = () => {
                     id="state"
                     value={state}
                     onChange={(e) => {
-                      setState(e.target.value)
+                      setState(e.target.value);
                     }}
                     className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
@@ -203,17 +204,13 @@ const CreateUser = () => {
 
               <div className="text-right sm:col-span-2">
                 <button
-<<<<<<< HEAD
-                  type="submit" onClick={saveUserInfo}
+                  type="submit"
+                  onClick={saveUserInfo}
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-xl font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
                 >
                   Choose A Character
                   <i class="fas fa-arrow-alt-right  object-center  inline-block align-middle right text-xl"></i>
                 </button>
-=======
-                  type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-xl font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">Choose A Character<i className="fas fa-arrow-alt-right  object-center  inline-block align-middle right text-xl"></i></button>
->>>>>>> ea168100dcf8bfe92ec0ea02c04f2204eeca4fe7
               </div>
             </form>
           </div>

@@ -8,7 +8,7 @@ import {useHistory} from 'react-router-dom'
 // {characters.map((character) => {
 //   return
 // })}
-const CharacterSelect = () => {
+const CharacterSelect = ({userId}) => {
 
   const history = useHistory();
   function characterChosen() {
@@ -16,8 +16,11 @@ const CharacterSelect = () => {
   }
 
   const [characters, setCharacters] = useState([]);
+  const [userId2, setUserId2] = useState("")
+  
   useEffect(() => {
     // axios get to fetch all events
+    setUserId2(userId)
     // set into state using setEvents
     axios.get("https://api.jikan.moe/v3/top/characters").then((response) => {
       console.log(response);
