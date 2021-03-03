@@ -16,7 +16,7 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="relative bg-gray-900 py-16 sm:py-24">
+    <div className="h-screen relative bg-gray-900 py-16 sm:py-24">
       <div className="mx-auto text-base max-w-prose lg:max-w-none">
       <h2 className="text-2xl text-indigo-500 font-bold tracking-wide uppercase">AniPlay Events</h2>
       <h3 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Discover & Plan Events</h3>
