@@ -18,7 +18,12 @@ const Team = () => {
             <p className="text-xl text-gray-300">
               Welcome to your team page where you can join or leave a team.
             </p>
-            <button>Back to Profile</button>
+            <button
+              type="button"
+              className="mt-3 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
+              Back to Profile
+            </button>
           </div>
           <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
             <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
