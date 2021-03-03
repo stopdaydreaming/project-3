@@ -34,23 +34,21 @@ const Landing = () => {
             <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
               Sign in to your account
             </h2>
-            <p className="mt-2 text-sm text-gray-600 max-w">
+            <p className="mt-2 text-lg text-gray-600 max-w">
               New to AniPlay?
               <a
                 href="/create"
-                className="font-medium text-indigo-600 hover:text-indigo-500"
+                className="font-medium text-lg text-indigo-600 hover:text-indigo-500"
               >
-                &nbsp;Create an account
+                &nbsp;Create an account <strong>or</strong>
               </a>
             </p>
-            <br />
-            <h2>
-              <strong>or</strong>
-            </h2>
-            <br />
-            <h2>Sign in with Google</h2>
-            <br />
-            <HookLogin />
+          <br />
+             <h2 class="font-bold text-lg ">
+               Sign in with Google <HookLogin /><br />
+               </h2>  
+            
+           
             {/* <Login /> */}
             {/* <GoogleLogin
               clientID="290641540556-ks696c7llt77ibqkmli3l416nbk15ima.apps.googleusercontent.com"
@@ -110,9 +108,9 @@ const Landing = () => {
                 <div>
                   <button
                     type="submit"
-                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-xl font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
-                    SIGN IN
+                    Sign In
                   </button>
                 </div>
               </form>
