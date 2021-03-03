@@ -4,6 +4,7 @@
 ![GitHub license](https://img.shields.io/badge/Javascript-yellow)
 ![GitHub license](https://img.shields.io/badge/-node.js-green)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white
 
 
 # Table of Contents
@@ -35,6 +36,8 @@ These were the major frameworks used to build this application:
 * CSS 
 * MongoDB
 * React JS 
+* Express 
+* Mongoose
 * Heroku    
 * Figma
 * Tailwinds  
@@ -42,8 +45,16 @@ These were the major frameworks used to build this application:
 * Jikan API 
 * Font Awesome
 
-### Getting Started 
 
+## Getting Started 
+
+### Prerequisites 
+
+`npm init -y`
+
+`npm install axios express mongoose`
+
+### Installation 
 To get a local copy up and running follow these simple example steps.
 
 1.  `Clone the repo`
@@ -56,9 +67,6 @@ To get a local copy up and running follow these simple example steps.
 4. `npm start`
 
 5. `run application in your local host`
-
-
-### Installation 
 
 
 
@@ -84,7 +92,7 @@ The following sites were used to make Aniplay a functioning application:
 
 * [Aneme Cons](https://animecons.com/events/schedule.php?year=2021)    
 
-* [Stackoverflow](https://stackoverflow.com/)        
+* [Font Awesome](https://fontawesome.com/pro)        
 
 * [Shutterstock](https://www.shutterstock.com/)
 
@@ -92,7 +100,7 @@ The following sites were used to make Aniplay a functioning application:
 ### License  
 
 MIT License
-Copyright (c) 2021 Daniel Guadalupe, Selena Singleton, Lisa Copeland, Derrick Hardison 
+Copyright (c) 2021 Daniel Guadalupe, Selena Singleton, Lisa Copeland, Derrick Hardison. 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
