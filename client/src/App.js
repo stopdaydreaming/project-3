@@ -18,6 +18,7 @@ import CharacterSelect from "./pages/CharacterSelect";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Footer from "./components/Footer/Footer";
+import AllTeams from "./pages/AllTeams";
 
 // dummy data
 const sampleUser = {
@@ -47,6 +48,7 @@ function App() {
           <Route exact path="/events" component={Events} />
           <Route exact path="/create" component={CreateUser} />
           <Route exact path="/characters" component={CharacterSelect} />
+          <Route exact path="/allteams" component={AllTeams} />
           <Route
             path="/profile"
             render={() => <Profile currentUser={currentUser} />}
