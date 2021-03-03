@@ -21,14 +21,14 @@ function HookLogin() {
 
     const history = useHistory();
 
-  const onSuccess = (res) => {
+  // const onSuccess = (res) => {
       
-    console.log("Login Success: currentUser:", res.profileObj);
-    alert(
-      `Logged in successfully welcome ${res.profileObj.name}.`
-    );
-    // history.push("/profile");
-  };
+  //   console.log("Login Success: currentUser:", res.profileObj);
+  //   alert(
+  //     `Logged in successfully welcome ${res.profileObj.name}.`
+  //   );
+  //   // history.push("/profile");
+  // };
 
   const onFailure = (res) => {
     console.log("Login failed: res:", res);
@@ -36,7 +36,7 @@ function HookLogin() {
   };
 
   const { signIn } = useGoogleLogin({
-    onSuccess,
+    // onSuccess,
     onFailure,
     onSignIn,
     clientId,
@@ -48,11 +48,7 @@ function HookLogin() {
 
   return (
     <div>
-      <button onClick={signIn} className="button">
-        <img src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt="google login" className="icon"></img>
-
-        <span className="buttonText">Sign in with Google</span>
-      </button>
+      <button onClick={signIn} className="button text-2xl fab fa-google inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"> </button>
     </div>
   );
 }
