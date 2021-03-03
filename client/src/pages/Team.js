@@ -6,12 +6,13 @@ const Team = () => {
     <div className="bg-gray-900">
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
-          <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
+          <div className="text-center">
             <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
               Meet our Family
             </h2>
             <p className="text-xl text-gray-300">
-              Welcome to your team page where you can add or delete characters on your team.
+              Welcome to your team page where you can add or delete characters
+              on your team.
             </p>
           </div>
           <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
@@ -45,7 +46,7 @@ const Team = () => {
                     </li>
                     <li>
                       <a href="#" className="text-gray-400 hover:text-gray-300">
-                      <i className="fas fa-user-minus"></i>
+                        <i className="fas fa-user-minus"></i>
                         <span className="sr-only">LinkedIn</span>
                         <svg
                           className="w-5 h-5"
@@ -76,7 +77,8 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus"></i>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                        <i className="fas fa-user-plus"></i>
                         <span className="sr-only">Twitter</span>
                         <svg
                           className="w-5 h-5"
@@ -98,11 +100,7 @@ const Team = () => {
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
-                          <path
-                            fillRule="evenodd"
-                            d=""
-                            clipRule="evenodd"
-                          />
+                          <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
                       </a>
                     </li>
@@ -125,7 +123,8 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus text-lg padding "></i>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                        <i className="fas fa-user-plus text-lg padding "></i>
                         <span className="sr-only">Twitter</span>
                         <svg
                           className="w-5 h-5"
@@ -138,7 +137,8 @@ const Team = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-minus"></i>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                        <i className="fas fa-user-minus"></i>
                         <span className="sr-only">LinkedIn</span>
                         <svg
                           className="w-5 h-5"
@@ -146,11 +146,7 @@ const Team = () => {
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
-                          <path
-                            fillRule="evenodd"
-                            d=""
-                            clipRule="evenodd"
-                          />
+                          <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
                       </a>
                     </li>
@@ -160,7 +156,7 @@ const Team = () => {
             </li>
           </ul>
           <hr />
-          <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
+          <div className="text-center">
             <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
               Add a Character
             </h2>
@@ -200,7 +196,7 @@ const Team = () => {
                     </li>
                     <li>
                       <a href="#" className="text-gray-400 hover:text-gray-300">
-                      <i className="fas fa-user-minus"></i>
+                        <i className="fas fa-user-minus"></i>
                         <span className="sr-only">LinkedIn</span>
                         <svg
                           className="w-5 h-5"
@@ -231,7 +227,8 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus"></i>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                        <i className="fas fa-user-plus"></i>
                         <span className="sr-only">Twitter</span>
                         <svg
                           className="w-5 h-5"
@@ -253,11 +250,7 @@ const Team = () => {
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
-                          <path
-                            fillRule="evenodd"
-                            d=""
-                            clipRule="evenodd"
-                          />
+                          <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
                       </a>
                     </li>
@@ -280,7 +273,8 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-plus text-lg padding "></i>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                        <i className="fas fa-user-plus text-lg padding "></i>
                         <span className="sr-only">Twitter</span>
                         <svg
                           className="w-5 h-5"
@@ -293,7 +287,8 @@ const Team = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300"><i className="fas fa-user-minus"></i>
+                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                        <i className="fas fa-user-minus"></i>
                         <span className="sr-only">LinkedIn</span>
                         <svg
                           className="w-5 h-5"
@@ -301,11 +296,7 @@ const Team = () => {
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
-                          <path
-                            fillRule="evenodd"
-                            d=""
-                            clipRule="evenodd"
-                          />
+                          <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
                       </a>
                     </li>
