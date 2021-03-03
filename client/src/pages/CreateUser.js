@@ -30,6 +30,8 @@ const CreateUser = () => {
   function chooseCharacter(event) {
     event.preventDefault();
     history.push("/characters");
+
+    axios.post("/api/characters")
   }
 
 //   function postUser(event) {
