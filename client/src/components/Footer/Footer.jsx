@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 const Footer = () => {
   const { pathname } = useLocation();
   useEffect(() => {
-    console.log(pathname);
+    // console.log(pathname);
   }, [pathname]);
   return (
     <>
