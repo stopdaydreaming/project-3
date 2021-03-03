@@ -31,32 +31,37 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
-                        <i className="fas fa-user-plus"></i>
-                        <span className="sr-only">Twitter</span>
+                      <button
+                        type="button"
+                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
+                        <i className="fas fa-user-plus fa-md"></i>
                         <svg
-                          className="w-5 h-5"
+                          className=""
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
                           <path d="" />
                         </svg>
-                      </a>
+                      </button>
+
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <button
+                        type="button"
+                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
                         <i className="fas fa-user-minus"></i>
-                        <span className="sr-only">LinkedIn</span>
                         <svg
-                          className="w-5 h-5"
+                          className=""
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
                           <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -181,38 +186,43 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
-                        <i className="fas fa-user-plus"></i>
-                        <span className="sr-only">Twitter</span>
+                      <button
+                        type="button"
+                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
+                        <i className="fas fa-user-plus fa-md"></i>
                         <svg
-                          className="w-5 h-5"
+                          className=""
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
                           <path d="" />
                         </svg>
-                      </a>
+                      </button>
+
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <button
+                        type="button"
+                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
                         <i className="fas fa-user-minus"></i>
-                        <span className="sr-only">LinkedIn</span>
                         <svg
-                          className="w-5 h-5"
+                          className=""
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
                           <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
               </div>
             </li>
-            <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
+            {/* <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
               <div className="space-y-6 xl:space-y-10">
                 <img
                   className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
@@ -257,8 +267,8 @@ const Team = () => {
                   </ul>
                 </div>
               </div>
-            </li>
-            <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
+            </li> */}
+            {/* <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
               <div className="space-y-6 xl:space-y-10">
                 <img
                   className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
@@ -272,8 +282,8 @@ const Team = () => {
                   </div>
 
                   <ul className="flex justify-center space-x-5">
-                    <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                    <li> */}
+                      {/* <a href="#" className="text-gray-400 hover:text-gray-300">
                         <i className="fas fa-user-plus text-lg padding "></i>
                         <span className="sr-only">Twitter</span>
                         <svg
@@ -303,7 +313,7 @@ const Team = () => {
                   </ul>
                 </div>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
