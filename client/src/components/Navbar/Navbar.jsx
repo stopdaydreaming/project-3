@@ -20,14 +20,14 @@ const Navbar = () => {
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
                 
-                  <a href="/team"
+                  <a href="/allteams"
                     className="text-white hover:bg-indigo-900 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
                   >
-                    Team
+                    View Teams
                   </a>
                   <a href ="/events" className="text-white hover:bg-indigo-900 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
                   >
-                    Events
+                    View Events
                   </a>
                   
                 </div>
