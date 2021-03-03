@@ -1,5 +1,10 @@
 import React from "react";
+
+//characters
 import avatar from "../assets/Img/avatar_blue.png";
+import sailor from "../assets/Img/sms.jpg";
+import naruto from "../assets/Img/naruto_profile.jpg";
+import inuyasha from "../assets/Img/inuyasha.jpg";
 
 const Team = () => {
   return (
@@ -20,7 +25,7 @@ const Team = () => {
               <div className="space-y-6 xl:space-y-10">
                 <img
                   className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-                  src={avatar}
+                  src={sailor}
                   alt=""
                 />
                 <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
@@ -45,7 +50,6 @@ const Team = () => {
                           <path d="" />
                         </svg>
                       </button>
-
                     </li>
                     <li>
                       <button
@@ -71,43 +75,47 @@ const Team = () => {
               <div className="space-y-6 xl:space-y-10">
                 <img
                   className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-                  src={avatar}
+                  src={naruto}
                   alt=""
                 />
                 <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                   <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3 className="text-white">Leonard Krasner</h3>
-                    <p className="text-indigo-400">Senior Designer</p>
+                    <h3 className="text-white">Naruto</h3>
+                    <p className="text-indigo-400">Shonen Jump</p>
                   </div>
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
-                        <i className="fas fa-user-plus"></i>
-                        <span className="sr-only">Twitter</span>
+                      <button
+                        type="button"
+                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
+                        <i className="fas fa-user-plus fa-md"></i>
                         <svg
-                          className="w-5 h-5"
+                          className=""
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
                           <path d="" />
                         </svg>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <button
+                        type="button"
+                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
                         <i className="fas fa-user-minus"></i>
-                        <span className="sr-only">LinkedIn</span>
                         <svg
-                          className="w-5 h-5"
+                          className=""
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
                           <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -117,43 +125,47 @@ const Team = () => {
               <div className="space-y-6 xl:space-y-10">
                 <img
                   className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-                  src={avatar}
+                  src={inuyasha}
                   alt=""
                 />
                 <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                   <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3 className="text-white">Leonard Krasner</h3>
-                    <p className="text-indigo-400">Senior Designer</p>
+                    <h3 className="text-white">Inuyasha</h3>
+                    <p className="text-indigo-400">Kagome Girls</p>
                   </div>
 
                   <ul className="flex justify-center space-x-5">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
-                        <i className="fas fa-user-plus text-lg padding "></i>
-                        <span className="sr-only">Twitter</span>
+                      <button
+                        type="button"
+                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
+                        <i className="fas fa-user-plus fa-md"></i>
                         <svg
-                          className="w-5 h-5"
+                          className=""
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
                           <path d="" />
                         </svg>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-gray-300">
+                      <button
+                        type="button"
+                        class="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      >
                         <i className="fas fa-user-minus"></i>
-                        <span className="sr-only">LinkedIn</span>
                         <svg
-                          className="w-5 h-5"
+                          className=""
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"
                         >
                           <path fillRule="evenodd" d="" clipRule="evenodd" />
                         </svg>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -200,7 +212,6 @@ const Team = () => {
                           <path d="" />
                         </svg>
                       </button>
-
                     </li>
                     <li>
                       <button
@@ -283,7 +294,7 @@ const Team = () => {
 
                   <ul className="flex justify-center space-x-5">
                     <li> */}
-                      {/* <a href="#" className="text-gray-400 hover:text-gray-300">
+            {/* <a href="#" className="text-gray-400 hover:text-gray-300">
                         <i className="fas fa-user-plus text-lg padding "></i>
                         <span className="sr-only">Twitter</span>
                         <svg
