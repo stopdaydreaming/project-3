@@ -3,38 +3,63 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import girl from "../assets/Img/girl.jpg";
 // import avatar from "../assets/Img/avatar_blue.png";
-import axios from 'axios'
+import axios from "axios";
+import CharacterSelect from "./CharacterSelect";
 
 const CreateUser = () => {
-  const [characters, setCharacters] = useState([]);
+  // const [characters, setCharacters] = useState([]);
 
-  useEffect(() => {
-    // axios get to fetch all events
-    // set into state using setEvents
-    axios.get("https://api.jikan.moe/v3/top/characters").then((response) => {
-      console.log(response)
-      setCharacters(response.data.top)
-    });
-  }, []);
+  const [username, setUsername] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [userId, setUserId] = useState("");
+
+  // useEffect(() => {
+  //   // axios get to fetch all events
+  //   // set into state using setEvents
+  //   axios.get("https://api.jikan.moe/v3/top/characters").then((response) => {
+  //     console.log(response)
+  //     setCharacters(response.data.top)
+  //   });
+  // }, []);
 
   const history = useHistory();
-  
-  const chooseCharacter = (e) => {
+
+  const collectProfileInfo = (e) => {
     e.preventDefault();
-    history.push("/characters");
 
-    axios.post("/api/characters")
-  }
+    axios
+      .post("/api/users", { username, city, state })
+      .then((response) => {
+        console.log(response);
+        setUserId(response.data._id);
+        <CharacterSelect userId = {userId} />
+        console.log(userId)
+        alert("Profile created!");
+        history.push("/characters");
+      })
+      .catch((err) => {
+        if (err) {
+          console.log(err);
+        }
+      });
 
-//   function postUser(event) {
-//     event.preventDefault();
-//     fetch('/api/users', {
-//     method: 'post',
-//     body: JSON.stringify(opts)
-//   }).then(function(response) {
-//     return response.json();
-//   })
-// }
+    console.log("save user info");
+  };
+
+  function saveUserInfo() {}
+
+  //axios.post("/api/users", )
+
+  //   function postUser(event) {
+  //     event.preventDefault();
+  //     fetch('/api/users', {
+  //     method: 'post',
+  //     body: JSON.stringify(opts)
+  //   }).then(function(response) {
+  //     return response.json();
+  //   })
+  // }
 
   return (
     <div className="relative bg-white">
@@ -58,7 +83,7 @@ const CreateUser = () => {
               Create your account.
             </h3>
             <form
-              onSubmit={chooseCharacter}
+              onSubmit={collectProfileInfo}
               className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
               <div className="sm:col-span-2">
@@ -73,6 +98,10 @@ const CreateUser = () => {
                     id="username"
                     name="username"
                     type="text"
+                    value={username}
+                    onChange={(e) => {
+                      setUsername(e.target.value);
+                    }}
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   />
                 </div>
@@ -89,6 +118,10 @@ const CreateUser = () => {
                     type="text"
                     name="city"
                     id="city"
+                    value={city}
+                    onChange={(e) => {
+                      setCity(e.target.value);
+                    }}
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   />
                 </div>
@@ -106,6 +139,10 @@ const CreateUser = () => {
                     type="text"
                     name="state"
                     id="state"
+                    value={state}
+                    onChange={(e) => {
+                      setState(e.target.value);
+                    }}
                     className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
@@ -117,7 +154,7 @@ const CreateUser = () => {
                 {/* <legend id="radiogroup-label" className="sr-only">
                   Server size
                 </legend> */}
-                {/* <ul
+              {/* <ul
                   className="space-y-4"
                   role="radiogroup"
                   aria-labelledby="radiogroup-label"
@@ -163,12 +200,17 @@ const CreateUser = () => {
                   })}
 
                 </ul> */}
-              {/* </fieldset> */} 
+              {/* </fieldset> */}
 
               <div className="text-right sm:col-span-2">
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-xl font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">Choose A Character<i className="fas fa-arrow-alt-right  object-center  inline-block align-middle right text-xl"></i></button>
+                  onClick={saveUserInfo}
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-xl font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
+                >
+                  Choose A Character
+                  <i class="fas fa-arrow-alt-right  object-center  inline-block align-middle right text-xl"></i>
+                </button>
               </div>
             </form>
           </div>
