@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import CharacterDropdown from "../components/Dropdowns/CharacterDropdown";
-import { BrowserRouter as useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import girl from "../assets/Img/girl.jpg";
 // import avatar from "../assets/Img/avatar_blue.png";
 import axios from 'axios'
@@ -16,19 +16,11 @@ const CreateUser = () => {
       setCharacters(response.data.top)
     });
   }, []);
-  // const characters = [
-  //   "bos",
-  //   "joe",
-  //   "naruto",
-  //   "inuyasha",
-  //   "sailor moon",
-  //   "steven",
-  //   "angel"
-  // ];
 
   const history = useHistory();
-  function chooseCharacter(event) {
-    event.preventDefault();
+  
+  const chooseCharacter = (e) => {
+    e.preventDefault();
     history.push("/characters");
   }
 
