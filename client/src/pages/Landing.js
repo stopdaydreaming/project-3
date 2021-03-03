@@ -45,7 +45,7 @@ const Landing = () => {
               </a>
             </p>
           <br />
-             <h2 class="font-bold text-lg ">
+             <h2 className="font-bold text-lg ">
                Sign in with Google <HookLogin /><br />
                </h2>  
             
