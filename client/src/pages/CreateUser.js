@@ -203,12 +203,17 @@ const CreateUser = () => {
 
               <div className="text-right sm:col-span-2">
                 <button
+<<<<<<< HEAD
                   type="submit" onClick={saveUserInfo}
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-xl font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
                 >
                   Choose A Character
                   <i class="fas fa-arrow-alt-right  object-center  inline-block align-middle right text-xl"></i>
                 </button>
+=======
+                  type="submit"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-xl font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">Choose A Character<i className="fas fa-arrow-alt-right  object-center  inline-block align-middle right text-xl"></i></button>
+>>>>>>> ea168100dcf8bfe92ec0ea02c04f2204eeca4fe7
               </div>
             </form>
           </div>
