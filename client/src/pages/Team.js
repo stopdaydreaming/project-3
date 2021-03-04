@@ -7,8 +7,7 @@ import naruto from "../assets/Img/naruto_profile.jpg";
 import inuyasha from "../assets/Img/inuyasha.jpg";
 import deku from "../assets/Img/deku.jpg";
 import tanjiro from "../assets/Img/tanjiro.jpeg";
-import onepiece from "../assets/Img/one_piece.jpg"
-
+import onepiece from "../assets/Img/one_piece.jpg";
 
 const Team = () => {
   return (
