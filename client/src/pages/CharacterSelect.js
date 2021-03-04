@@ -23,7 +23,7 @@ const CharacterSelect = (props) => {
         props.setUserId(response.data._id);
         props.setCurrentUser(response.data);
 
-        alert("Profile created!");
+        // alert("Profile created!");
         history.push("/profile");
       })
       .catch((err) => {

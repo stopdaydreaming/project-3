@@ -136,9 +136,7 @@ const Events = () => {
                           Date
                         </th>
 
-                        <th scope="col" className="relative px-6 py-3">
-                          <span className="sr-only">Attend</span>
-                        </th>
+                        
                       </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
@@ -158,14 +156,6 @@ const Events = () => {
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {event.date}
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <a
-                            href="/#"
-                            className="text-indigo-600 hover:text-indigo-900"
-                          >
-                            Attend
-                          </a>
                         </td>
                       </tr>
                     })}
