@@ -23,6 +23,7 @@
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Getting Started](#getting-started)
+* [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
@@ -33,7 +34,7 @@
 
 Are you a lover of cosplay and Anime? The application Aniplay is the perfect application to find and connect with your fellow cosplayers. Currently, there is a missing link in connecting with other cosplayers. This application not only allows you to search and find other cosplayers but also enables you to connect directly with them and plan to attend upcoming cosplay events. Aniplay will allow people the opportunity to build the perfect team for like minded individuals who love the same or similar anime characters. Aniplay also hosts an events section that will be regularly updated with upcoming events and allow users to plan to attend these events with their team members.
 
-[View the deployed application here]()
+[View the deployed application here!](https://animeets.herokuapp.com/)
 
 ![Landing Page](./client/src/assets/Img/landingpg.PNG)
 ![Create Account](./client/src/assets/Img/createacct.PNG)
