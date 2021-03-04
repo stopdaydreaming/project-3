@@ -8,25 +8,94 @@ import {useHistory} from 'react-router-dom'
 // {characters.map((character) => {
 //   return
 // })}
-const CharacterSelect = ({userId}) => {
+const CharacterSelect = (props) => {
+
+
+  const postNewUserData = (mainCharacter) => {
+    const username= props.username;
+    const city= props.city;
+    const state= props.state;
+    console.log({ username, city, state, mainCharacter } )
+    axios
+      .post("/api/users", { username, city, state, mainCharacter })
+      .then((response) => {
+        console.log(response);
+        props.setUserId(response.data._id);
+        props.setCurrentUser(response.data);
+
+        alert("Profile created!");
+        history.push("/profile");
+      })
+      .catch((err) => {
+        if (err) {
+          console.log(err);
+        }
+      });
+
+    console.log("save user info");
+  };
 
   const history = useHistory();
   function characterChosen() {
-    history.push("/profile");
+    //console.log("This is the selected user: " )
+    
+
+  //   title: { type: String, required: true },
+  // name: { type: String, required: true },
+  // photo:
+
+  var myCharacter = {
+    title: selectedCharacter.title,
+    name: selectedCharacter.animeography[0].name,
+    photo: selectedCharacter.image_url,
+  }
+  //console.log(myCharacter);
+
+  postNewUserData(myCharacter)
+  
+  
+ 
+
+  // userId = "603ffdcadd1b1cd7376d28fa";
+
+  // var myUserData = {
+  //   username: "test",
+  //   city: "Atlanta",
+  //   state: "Georgia",
+  //   mainCharacter: myCharacter
+  // }
+
+    // axios.put("/api/users/" + userId, myCharacter).then((response => {
+    //   console.log(response);
+
+      //console.log(myCharacter);
+
+    // }))
+
+
   }
 
   const [characters, setCharacters] = useState([]);
-  const [userId2, setUserId2] = useState("")
+  const [userId2, setUserId2] = useState("");
+
+  const [selectedCharacter, setSelectedCharacter] = useState({})
+
+  function myFunction(c) {
+    console.log(c)
+    setSelectedCharacter(c);
+  }
   
   useEffect(() => {
     // axios get to fetch all events
-    setUserId2(userId)
+    // setUserId2(userId)
     // set into state using setEvents
     axios.get("https://api.jikan.moe/v3/top/characters").then((response) => {
       console.log(response);
       setCharacters(response.data.top);
     });
   }, []);
+
+
   return (
     <div className="bg-hero bg-fixed ...">
     <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
@@ -58,6 +127,7 @@ const CharacterSelect = ({userId}) => {
                         </div>
                         <button
                   type="submit"
+                  onClick={() => {myFunction(character)}}
                   className="min-w-full inline-flex justify-center py-2 px-2 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-indigo-600 break-words hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Select<i className="right break-words fas fa-wand-magic"></i></button>
                       </div>
                     </li>

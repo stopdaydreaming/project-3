@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProfilePic from "./../../assets/Img/sms.jpg";
+// import ProfilePic from "./../../assets/Img/sms.jpg";
 
 class Profile extends Component {
   render() {
@@ -25,7 +25,7 @@ class Profile extends Component {
         <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
           <figure>
             <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-              <img className="rounded-lg shadow-lg object-cover object-center" src={ProfilePic} alt="User Profile pic" />
+              <img className="rounded-lg shadow-lg object-cover object-center" src={this.props.currentUser.mainCharacter.photo} alt="User Profile pic" />
             </div>
             <br></br>
             <button type="button" className="inline-flex items-center px-8 py-4  border border-transparent shadow-sm text-lg leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Assemble Team
@@ -64,7 +64,7 @@ class Profile extends Component {
       </div>
       <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
         <dt className="text-lg font-bold text-indigo-500">
-          Team
+          Title
         </dt>
         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
           {this.props.currentUser.mainCharacter.title}
@@ -86,14 +86,14 @@ class Profile extends Component {
           {this.props.currentUser.state}
         </dd>
       </div>
-      <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+      {/* <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
         <dt className="text-lg font-bold text-indigo-500">
           Synopsis
         </dt>
         <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-          Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
+          {this.props.currentUser.mainCharacter.synopsis}
         </dd>
-      </div>
+      </div> */}
 
 <div className="flex flex-col">
   <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
