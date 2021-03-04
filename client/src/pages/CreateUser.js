@@ -6,13 +6,14 @@ import girl from "../assets/Img/girl.jpg";
 import axios from "axios";
 import CharacterSelect from "./CharacterSelect";
 
-const CreateUser = () => {
+const CreateUser = (props) => {
   // const [characters, setCharacters] = useState([]);
 
-  const [username, setUsername] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState("");
-  const [userId, setUserId] = useState("");
+  // const [username, setUsername] = useState("");
+  // const [city, setCity] = useState("");
+  // const [state, setState] = useState("");
+  // const [userId, setUserId] = useState("");
+
 
   // useEffect(() => {
   //   // axios get to fetch all events
@@ -23,29 +24,13 @@ const CreateUser = () => {
   //   });
   // }, []);
 
+  function goToCharacterSelect() {
+        history.push("/characters");
+  }
+
+
   const history = useHistory();
 
-  const collectProfileInfo = (e) => {
-    e.preventDefault();
-
-    axios
-      .post("/api/users", { username, city, state })
-      .then((response) => {
-        console.log(response);
-        setUserId(response.data._id);
-        <CharacterSelect userId = {userId} />
-        console.log(userId)
-        alert("Profile created!");
-        history.push("/characters");
-      })
-      .catch((err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
-
-    console.log("save user info");
-  };
 
   function saveUserInfo() {}
 
@@ -83,7 +68,7 @@ const CreateUser = () => {
               Create your account.
             </h3>
             <form
-              onSubmit={collectProfileInfo}
+              onSubmit={goToCharacterSelect}
               className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
               <div className="sm:col-span-2">
@@ -98,9 +83,9 @@ const CreateUser = () => {
                     id="username"
                     name="username"
                     type="text"
-                    value={username}
+                    value={props.username}
                     onChange={(e) => {
-                      setUsername(e.target.value);
+                      props.setUsername(e.target.value);
                     }}
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   />
@@ -118,9 +103,9 @@ const CreateUser = () => {
                     type="text"
                     name="city"
                     id="city"
-                    value={city}
+                    value={props.city}
                     onChange={(e) => {
-                      setCity(e.target.value);
+                      props.setCity(e.target.value);
                     }}
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   />
@@ -139,9 +124,9 @@ const CreateUser = () => {
                     type="text"
                     name="state"
                     id="state"
-                    value={state}
+                    value={props.state}
                     onChange={(e) => {
-                      setState(e.target.value);
+                      props.setState(e.target.value);
                     }}
                     className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                   />

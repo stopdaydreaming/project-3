@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 // import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
@@ -9,17 +9,46 @@ import Logo from "../assets/Img/ap.png";
 // import Login from "../components/Login/Login";
 import HookLogin from "../components/Login/HookLogin";
 
-const Landing = () => {
+const Landing = (props) => {
   //  const responseGoogle = (response) => {
   //    console.log(response);
   //    console.log(response.profileObj);
   //  };
 
   const history = useHistory();
+
+
+  const [currentUsername, setCurrentUsername] = useState({});
+
+  const handleChange = (e) => {
+    setCurrentUsername({text: e.target.value})
+  }
+
+
   
   const viewProfile = (e) => {
     e.preventDefault();
-    history.push("/profile");
+
+    fetch('/api/users')
+    .then(response => response.json())
+    .then((data) => {
+      var allUsers = data;
+
+      console.log(data);
+
+      var selectedUser  = allUsers.filter((user) => {
+        console.log(user.username + " vs. " + currentUsername.text)
+        return user.username == currentUsername.text
+      });
+
+      console.log(selectedUser)
+
+      props.setUserData(selectedUser[0]);
+
+      history.push("/profile");
+
+    })
+
   }
 
   return (
@@ -78,6 +107,7 @@ const Landing = () => {
                       autoComplete="username"
                       required
                       className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
