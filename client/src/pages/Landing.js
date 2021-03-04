@@ -70,23 +70,11 @@ const Landing = (props) => {
                 href="/create"
                 className="font-medium text-lg text-indigo-600 hover:text-indigo-500"
               >
-                &nbsp;Create an account <strong>or</strong>
+                &nbsp;Create an account 
               </a>
             </p>
           <br />
-             <h2 className="font-bold text-lg ">
-               Sign in with Google <HookLogin /><br />
-               </h2>  
             
-           
-            {/* <Login /> */}
-            {/* <GoogleLogin
-              clientID="290641540556-ks696c7llt77ibqkmli3l416nbk15ima.apps.googleusercontent.com"
-              buttonText="Login"
-              onSuccess={this.responseGoogle}
-              onFailure={this.responseGoogle}
-              cookiePolicy={"single_host_origin"}
-            /> */}
           </div>
 
           <div className="mt-8">
