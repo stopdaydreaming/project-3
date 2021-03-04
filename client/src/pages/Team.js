@@ -1,7 +1,8 @@
 import React from "react";
+import "../App.css"
 
 //characters
-import avatar from "../assets/Img/avatar_blue.png";
+// import avatar from "../assets/Img/avatar_blue.png";
 import sailor from "../assets/Img/sms.jpg";
 import naruto from "../assets/Img/naruto_profile.jpg";
 import inuyasha from "../assets/Img/inuyasha.jpg";
@@ -10,6 +11,25 @@ import tanjiro from "../assets/Img/tanjiro.jpeg";
 import onepiece from "../assets/Img/one_piece.jpg";
 
 const Team = () => {
+
+  const userAdded = () => {
+    let x = document.getElementById("toast");
+    x.classList.add("show");
+    x.innerHTML="You have been added to a team!";
+    setTimeout(function(){
+      x.classList.remove("show");
+    },3000);
+  }
+
+  const userRemoved = () => {
+    let x = document.getElementById("toast");
+    x.classList.add("show");
+    x.innerHTML="You have been removed from a team!";
+    setTimeout(function(){
+      x.classList.remove("show");
+    },3000);
+  }
+  
   return (
     <div className="bg-gray-900">
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
@@ -21,6 +41,7 @@ const Team = () => {
             <p className="text-xl text-gray-300">
               Welcome to your team page where you can join or leave a team.
             </p>
+            <div id="toast"></div>
           </div>
           <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
             <li className="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
@@ -41,6 +62,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userAdded}
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -57,6 +79,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userRemoved}
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
@@ -91,6 +114,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userAdded}
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -107,6 +131,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userRemoved}
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
@@ -141,6 +166,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userAdded}
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -157,6 +183,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userRemoved}
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
@@ -194,6 +221,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userAdded}
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -210,6 +238,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userRemoved}
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
@@ -244,6 +273,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userAdded}
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -260,6 +290,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userRemoved}
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
@@ -294,6 +325,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userAdded}
                       >
                         <i className="fas fa-user-plus fa-md"></i>
                         <svg
@@ -310,6 +342,7 @@ const Team = () => {
                       <button
                         type="button"
                         className="inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        onClick={userRemoved}
                       >
                         <i className="fas fa-user-minus"></i>
                         <svg
