@@ -39,6 +39,7 @@ Are you a lover of cosplay and Anime? The application Aniplay is the perfect app
 ![Landing Page](./client/src/assets/Img/landingpg.PNG)
 ![Create Account](./client/src/assets/Img/createacct.PNG)
 ![Profile](./client/src/assets/Img/profilepg.PNG)
+![Profile](./client/src/assets/Img/characpg.PNG)
 
 ## Built with 
 
